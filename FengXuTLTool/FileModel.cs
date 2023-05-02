@@ -25,4 +25,23 @@ namespace FengXuTLTool
 
         public string Name { get; set; }
     }
+
+
+    public class XYJShop
+    {
+        public string index { get; set; }
+        public string 商店标识 { get; set; }
+        public string nMenuIndex  { get; set; }
+        public string nShopIndex { get; set; }
+        public string 物品INDEX { get; set; }
+        public string 物品ITEMID { get; set; }
+
+        public string 物品数量 { get; set; }
+        public string 物品价格 { get; set; }
+
+        public string 物品折扣比 { get; set; }
+        public string 商品特殊标记 { get; set; }
+        public string 颜色显示 { get; set; }
+
+    }
 }

@@ -4,6 +4,7 @@ using System.Data;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -52,37 +53,104 @@ namespace FengXuTLTool
         {
 
             _articleLists = new List<ArticleList>();
-
-            DataTable dt = Excel.TXTToDataTable("CommonItem.txt", string.Empty);
-            //循环遍历所有的行，将值赋值给List
-            for (int i = 0; i < dt.Rows.Count; i++)
+            Task task = Task.Run(() =>
             {
-                if (dt.Rows[i]["NAME$1$"].ToString().Contains("未使用") || dt.Rows[i]["NAME$1$"].ToString().Contains("未知") || dt.Rows[i]["NAME$1$"].ToString().Contains("废弃") || string.IsNullOrEmpty(dt.Rows[i]["NAME$1$"].ToString()))
+                DataTable dt = Excel.TXTToDataTable("CommonItem.txt", string.Empty);
+                //循环遍历所有的行，将值赋值给List
+                for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    continue;
+                    if (dt.Rows[i]["NAME$1$"].ToString().Contains("未使用") || dt.Rows[i]["NAME$1$"].ToString().Contains("未知") || dt.Rows[i]["NAME$1$"].ToString().Contains("废弃") || string.IsNullOrEmpty(dt.Rows[i]["NAME$1$"].ToString()))
+                    {
+                        continue;
+                    }
+                    _articleLists.Add(new ArticleList
+                    {
+                        Index = dt.Rows[i]["INDEX"].ToString(),
+                        Name = dt.Rows[i]["NAME$1$"].ToString(),
+                    });
                 }
-                _articleLists.Add(new ArticleList
-                {
-                    Index = dt.Rows[i]["INDEX"].ToString(),
-                    Name = dt.Rows[i]["NAME$1$"].ToString(),
-                });
-            }
+            });
 
 
-            DataTable dt1 = Excel.TXTToDataTable("EquipBase.txt", string.Empty);
-            //循环遍历所有的行，将值赋值给List
-            for (int i = 0; i < dt.Rows.Count; i++)
+            Task task1 = Task.Run(() =>
             {
-                if (dt1.Rows[i]["NAME(名称)$1$"].ToString().Contains("未使用") || dt1.Rows[i]["NAME(名称)$1$"].ToString().Contains("废弃") || string.IsNullOrEmpty(dt1.Rows[i]["NAME(名称)$1$"].ToString()))
+                DataTable dt1 = Excel.TXTToDataTable("EquipBase.txt", string.Empty);
+                //循环遍历所有的行，将值赋值给List
+                for (int i = 0; i < dt1.Rows.Count; i++)
                 {
-                    continue;
+                    try
+                    {
+                        if (dt1.Rows[i].IsNull("NAME(名称)$1$"))
+                        {
+                            continue;
+                        }
+                        if (dt1.Rows[i]["NAME(名称)$1$"].ToString().Contains("未使用"))
+                        {
+                            continue;
+                        }
+
+                        if (dt1.Rows[i]["NAME(名称)$1$"].ToString().Contains("废弃"))
+                        {
+                            continue;
+                        }
+                        if (string.IsNullOrEmpty(dt1.Rows[i]["NAME(名称)$1$"].ToString()))
+                        {
+                            continue;
+                        }
+
+                        _articleLists.Add(new ArticleList
+                        {
+                            Index = dt1.Rows[i]["INDEX"].ToString(),
+                            Name = dt1.Rows[i]["NAME(名称)$1$"].ToString(),
+                        });
+                    }
+                    catch
+                    {
+
+                    }
+                    finally
+                    {
+
+                    }
+
                 }
-                _articleLists.Add(new ArticleList
+
+            });
+
+
+
+            Task task2 = Task.Run(() =>
+            {
+                DataTable dt2 = Excel.TXTToDataTable("GemInfo.txt", string.Empty);
+                //循环遍历所有的行，将值赋值给List
+                for (int i = 0; i < dt2.Rows.Count; i++)
                 {
-                    Index = dt1.Rows[i]["INDEX"].ToString(),
-                    Name = dt1.Rows[i]["NAME(名称)$1$"].ToString(),
-                });
-            }
+                    try
+                    {
+                        if (dt2.Rows[i].IsNull("名称$1$"))
+                        {
+                            continue;
+                        }
+
+                        _articleLists.Add(new ArticleList
+                        {
+                            Index = dt2.Rows[i]["INDEX"].ToString(),
+                            Name = dt2.Rows[i]["名称$1$"].ToString(),
+                        });
+                    }
+                    catch
+                    {
+
+                    }
+                    finally
+                    {
+
+                    }
+
+                }
+
+            });
+
         }
 
         #endregion

@@ -45,5 +45,11 @@ namespace FengXuTLTool
 
             this.edtMemo.Text = "工具支持生成上传CDK,可以直接通过物品名称搜索\r\n支持一键导出爆率\r\n持续更新中有问题联系作者,看心情修复！！！！";
         }
+
+        private void btnShop_Click(object sender, EventArgs e)
+        {
+            FrmXYJShop frmXYJShop = new FrmXYJShop();
+            frmXYJShop.Show();
+        }
     }
 }

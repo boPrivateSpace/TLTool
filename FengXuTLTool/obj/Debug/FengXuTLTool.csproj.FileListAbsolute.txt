@@ -10,5 +10,7 @@ C:\Users\jibo.wang\source\repos\FileUpload\FengXuTLTool\obj\Debug\FengXuTLTool.F
 C:\Users\jibo.wang\source\repos\FileUpload\FengXuTLTool\obj\Debug\FengXuTLTool.exe
 C:\Users\jibo.wang\source\repos\FileUpload\FengXuTLTool\obj\Debug\FengXuTLTool.pdb
 C:\Users\jibo.wang\source\repos\FileUpload\FengXuTLTool\obj\Debug\FengXuTLTool.exe.licenses
-C:\Users\jibo.wang\source\repos\FileUpload\FengXuTLTool\obj\Debug\FengXuTLTool.csproj.AssemblyReference.cache
 C:\Users\jibo.wang\source\repos\FileUpload\FengXuTLTool\obj\Debug\FengXuTLTool.FrmMoni.resources
+C:\Users\jibo.wang\source\repos\FileUpload\FengXuTLTool\obj\Debug\FengXuTLTool.FrmXYJShop.resources
+C:\Users\jibo.wang\source\repos\FileUpload\FengXuTLTool\obj\Debug\FengXuTLTool.FrmLogin.resources
+C:\Users\jibo.wang\source\repos\FileUpload\FengXuTLTool\obj\Debug\FengXuTLTool.FrmRegister.resources

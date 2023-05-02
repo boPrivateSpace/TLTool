@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraGrid.Views.Grid;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -123,13 +124,13 @@ namespace FengXuTLTool
             {
                 while ((strLine = sr.ReadLine()) != null)
                 {
-                    if (strLine.StartsWith("#"))
+                    if (strLine.StartsWith("#")|| string.IsNullOrEmpty(strLine))
                     {
                         continue;
                     }
                     aryLine = strLine.Split('\t');//tab分隔符
                     DataRow dr = dt.NewRow();
-                    for (int j = 0; j < columnCount; j++)
+                    for (int j = 0; j < aryLine.Count(); j++)
                     {
                         dr[j] = aryLine[j].ToUpper();
                     }
@@ -147,6 +148,80 @@ namespace FengXuTLTool
             return dt;
         }
 
+
+        public static bool ExportToExcelOrTxt(DataTable dgvData, string fileName, List<string> columns)
+        {
+            StreamWriter sw = new StreamWriter(fileName, false, Encoding.GetEncoding(-0));
+            string str = "";
+            try
+            {
+                //写标题
+                foreach (var item in columns)
+                {
+                    if (!string.IsNullOrEmpty(str))
+                    {
+                        str += "\t";
+                    }
+                    str += item.ToUpper(); ;
+                }
+
+                sw.WriteLine(str);
+
+                str = "";
+                for (int i = 0; i < dgvData.Columns.Count; i++)
+                {
+                    if (!string.IsNullOrEmpty(str))
+                    {
+                        str += "\t";
+                    }
+                    str += dgvData.Columns[i].ColumnName;
+                }
+                //str += "\t" + "时间戳";
+                sw.WriteLine(str);
+                sw.WriteLine("#风絮商店工具修改 By:QQ464141564");
+
+                //写内容
+                for (int j = 0; j < dgvData.Rows.Count; j++)
+                {
+                    string tempStr = "";
+                    DateTime time = default;
+                    for (int k = 0; k < dgvData.Columns.Count; k++)
+                    {
+                        if (!string.IsNullOrEmpty(tempStr))
+                        {
+                            tempStr += "\t";
+                        }
+                        string cellValue = dgvData.Rows[j][k].ToString();
+                        if (cellValue == null)
+                        {
+                            continue;
+                        }
+                        if (cellValue.Length > 8 && DateTime.TryParse(cellValue, out DateTime time1))
+                        {
+                            time = time1;
+                        }
+                        cellValue = cellValue.Replace(" ", "");
+                        cellValue = cellValue.Replace("\r", "");
+                        cellValue = cellValue.Replace("\n", "");
+                        cellValue = cellValue.Replace("\r\n", "");
+                        tempStr += cellValue;
+                    }
+                    sw.WriteLine(tempStr);
+                }
+                MessageBox.Show("导出成功");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return false;
+            }
+            finally
+            {
+                sw.Close();
+            }
+
+            return true;
+        }
 
     }
 }

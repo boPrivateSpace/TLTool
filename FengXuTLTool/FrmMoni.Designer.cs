@@ -30,6 +30,36 @@ namespace FengXuTLTool
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
@@ -44,65 +74,35 @@ namespace FengXuTLTool
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox14 = new System.Windows.Forms.TextBox();
             this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox15 = new System.Windows.Forms.TextBox();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox16 = new System.Windows.Forms.TextBox();
             this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox17 = new System.Windows.Forms.TextBox();
             this.layoutControlItem22 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox18 = new System.Windows.Forms.TextBox();
             this.layoutControlItem23 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox19 = new System.Windows.Forms.TextBox();
             this.layoutControlItem24 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox20 = new System.Windows.Forms.TextBox();
             this.layoutControlItem25 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox21 = new System.Windows.Forms.TextBox();
             this.layoutControlItem26 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox22 = new System.Windows.Forms.TextBox();
             this.layoutControlItem27 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox23 = new System.Windows.Forms.TextBox();
             this.layoutControlItem28 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox24 = new System.Windows.Forms.TextBox();
             this.layoutControlItem29 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox25 = new System.Windows.Forms.TextBox();
             this.layoutControlItem30 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox26 = new System.Windows.Forms.TextBox();
             this.layoutControlItem31 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox27 = new System.Windows.Forms.TextBox();
             this.layoutControlItem32 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox28 = new System.Windows.Forms.TextBox();
             this.layoutControlItem33 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox29 = new System.Windows.Forms.TextBox();
             this.layoutControlItem34 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textBox30 = new System.Windows.Forms.TextBox();
             this.layoutControlItem35 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -194,6 +194,216 @@ namespace FengXuTLTool
             this.layoutControl1.Size = new System.Drawing.Size(589, 716);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // textBox30
+            // 
+            this.textBox30.Location = new System.Drawing.Point(405, 684);
+            this.textBox30.Name = "textBox30";
+            this.textBox30.Size = new System.Drawing.Size(172, 20);
+            this.textBox30.TabIndex = 39;
+            // 
+            // textBox29
+            // 
+            this.textBox29.Location = new System.Drawing.Point(121, 684);
+            this.textBox29.Name = "textBox29";
+            this.textBox29.Size = new System.Drawing.Size(171, 20);
+            this.textBox29.TabIndex = 38;
+            // 
+            // textBox28
+            // 
+            this.textBox28.Location = new System.Drawing.Point(405, 660);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(172, 20);
+            this.textBox28.TabIndex = 37;
+            // 
+            // textBox27
+            // 
+            this.textBox27.Location = new System.Drawing.Point(121, 660);
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(171, 20);
+            this.textBox27.TabIndex = 36;
+            // 
+            // textBox26
+            // 
+            this.textBox26.Location = new System.Drawing.Point(405, 636);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(172, 20);
+            this.textBox26.TabIndex = 35;
+            // 
+            // textBox25
+            // 
+            this.textBox25.Location = new System.Drawing.Point(121, 636);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(171, 20);
+            this.textBox25.TabIndex = 34;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(405, 612);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(172, 20);
+            this.textBox24.TabIndex = 33;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(121, 612);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(171, 20);
+            this.textBox23.TabIndex = 32;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(405, 588);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(172, 20);
+            this.textBox22.TabIndex = 31;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(121, 588);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(171, 20);
+            this.textBox21.TabIndex = 30;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(405, 564);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(172, 20);
+            this.textBox20.TabIndex = 29;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(121, 564);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(171, 20);
+            this.textBox19.TabIndex = 28;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(405, 540);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(172, 20);
+            this.textBox18.TabIndex = 27;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(121, 540);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(171, 20);
+            this.textBox17.TabIndex = 26;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(405, 516);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(172, 20);
+            this.textBox16.TabIndex = 25;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(121, 516);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(171, 20);
+            this.textBox15.TabIndex = 24;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(405, 492);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(172, 20);
+            this.textBox14.TabIndex = 23;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(121, 492);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(171, 20);
+            this.textBox13.TabIndex = 22;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(405, 468);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(172, 20);
+            this.textBox12.TabIndex = 21;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(121, 468);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(171, 20);
+            this.textBox11.TabIndex = 20;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(405, 444);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(172, 20);
+            this.textBox10.TabIndex = 19;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(121, 444);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(171, 20);
+            this.textBox9.TabIndex = 18;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(405, 420);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(172, 20);
+            this.textBox8.TabIndex = 17;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(121, 420);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(171, 20);
+            this.textBox7.TabIndex = 16;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(405, 396);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(172, 20);
+            this.textBox6.TabIndex = 15;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(121, 396);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(171, 20);
+            this.textBox5.TabIndex = 14;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(405, 372);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(172, 20);
+            this.textBox4.TabIndex = 13;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(121, 372);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(171, 20);
+            this.textBox3.TabIndex = 12;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(405, 348);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(172, 20);
+            this.textBox2.TabIndex = 11;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(121, 348);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(171, 20);
+            this.textBox1.TabIndex = 10;
             // 
             // simpleButton3
             // 
@@ -373,13 +583,6 @@ namespace FengXuTLTool
             this.layoutControlItem6.TextToControlDistance = 0;
             this.layoutControlItem6.TextVisible = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(121, 348);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 20);
-            this.textBox1.TabIndex = 10;
-            // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.textBox1;
@@ -389,13 +592,6 @@ namespace FengXuTLTool
             this.layoutControlItem2.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem2.Text = "名称";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(405, 348);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 20);
-            this.textBox2.TabIndex = 11;
             // 
             // layoutControlItem7
             // 
@@ -407,13 +603,6 @@ namespace FengXuTLTool
             this.layoutControlItem7.Text = "物理攻击";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(121, 372);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(171, 20);
-            this.textBox3.TabIndex = 12;
-            // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.textBox3;
@@ -423,13 +612,6 @@ namespace FengXuTLTool
             this.layoutControlItem8.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem8.Text = "物理防御";
             this.layoutControlItem8.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(405, 372);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(172, 20);
-            this.textBox4.TabIndex = 13;
             // 
             // layoutControlItem9
             // 
@@ -441,13 +623,6 @@ namespace FengXuTLTool
             this.layoutControlItem9.Text = "魔法攻击";
             this.layoutControlItem9.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(121, 396);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(171, 20);
-            this.textBox5.TabIndex = 14;
-            // 
             // layoutControlItem10
             // 
             this.layoutControlItem10.Control = this.textBox5;
@@ -457,13 +632,6 @@ namespace FengXuTLTool
             this.layoutControlItem10.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem10.Text = "魔法防御";
             this.layoutControlItem10.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(405, 396);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(172, 20);
-            this.textBox6.TabIndex = 15;
             // 
             // layoutControlItem11
             // 
@@ -475,13 +643,6 @@ namespace FengXuTLTool
             this.layoutControlItem11.Text = "HP上限";
             this.layoutControlItem11.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(121, 420);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(171, 20);
-            this.textBox7.TabIndex = 16;
-            // 
             // layoutControlItem12
             // 
             this.layoutControlItem12.Control = this.textBox7;
@@ -491,13 +652,6 @@ namespace FengXuTLTool
             this.layoutControlItem12.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem12.Text = "MP上限";
             this.layoutControlItem12.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(405, 420);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(172, 20);
-            this.textBox8.TabIndex = 17;
             // 
             // layoutControlItem13
             // 
@@ -509,13 +663,6 @@ namespace FengXuTLTool
             this.layoutControlItem13.Text = "HP回复";
             this.layoutControlItem13.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(121, 444);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(171, 20);
-            this.textBox9.TabIndex = 18;
-            // 
             // layoutControlItem14
             // 
             this.layoutControlItem14.Control = this.textBox9;
@@ -525,13 +672,6 @@ namespace FengXuTLTool
             this.layoutControlItem14.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem14.Text = "MP回复";
             this.layoutControlItem14.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(405, 444);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(172, 20);
-            this.textBox10.TabIndex = 19;
             // 
             // layoutControlItem15
             // 
@@ -543,13 +683,6 @@ namespace FengXuTLTool
             this.layoutControlItem15.Text = "命中率";
             this.layoutControlItem15.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(121, 468);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(171, 20);
-            this.textBox11.TabIndex = 20;
-            // 
             // layoutControlItem16
             // 
             this.layoutControlItem16.Control = this.textBox11;
@@ -559,13 +692,6 @@ namespace FengXuTLTool
             this.layoutControlItem16.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem16.Text = "闪避";
             this.layoutControlItem16.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(405, 468);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(172, 20);
-            this.textBox12.TabIndex = 21;
             // 
             // layoutControlItem17
             // 
@@ -577,13 +703,6 @@ namespace FengXuTLTool
             this.layoutControlItem17.Text = "会心率";
             this.layoutControlItem17.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(121, 492);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(171, 20);
-            this.textBox13.TabIndex = 22;
-            // 
             // layoutControlItem18
             // 
             this.layoutControlItem18.Control = this.textBox13;
@@ -593,13 +712,6 @@ namespace FengXuTLTool
             this.layoutControlItem18.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem18.Text = "会心防御";
             this.layoutControlItem18.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(405, 492);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(172, 20);
-            this.textBox14.TabIndex = 23;
             // 
             // layoutControlItem19
             // 
@@ -611,13 +723,6 @@ namespace FengXuTLTool
             this.layoutControlItem19.Text = "移动速度";
             this.layoutControlItem19.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(121, 516);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(171, 20);
-            this.textBox15.TabIndex = 24;
-            // 
             // layoutControlItem20
             // 
             this.layoutControlItem20.Control = this.textBox15;
@@ -627,13 +732,6 @@ namespace FengXuTLTool
             this.layoutControlItem20.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem20.Text = "步行速度";
             this.layoutControlItem20.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(405, 516);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(172, 20);
-            this.textBox16.TabIndex = 25;
             // 
             // layoutControlItem21
             // 
@@ -645,13 +743,6 @@ namespace FengXuTLTool
             this.layoutControlItem21.Text = "攻击速度";
             this.layoutControlItem21.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(121, 540);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(171, 20);
-            this.textBox17.TabIndex = 26;
-            // 
             // layoutControlItem22
             // 
             this.layoutControlItem22.Control = this.textBox17;
@@ -661,13 +752,6 @@ namespace FengXuTLTool
             this.layoutControlItem22.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem22.Text = "冰攻击";
             this.layoutControlItem22.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(405, 540);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(172, 20);
-            this.textBox18.TabIndex = 27;
             // 
             // layoutControlItem23
             // 
@@ -679,13 +763,6 @@ namespace FengXuTLTool
             this.layoutControlItem23.Text = "冰防御";
             this.layoutControlItem23.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(121, 564);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(171, 20);
-            this.textBox19.TabIndex = 28;
-            // 
             // layoutControlItem24
             // 
             this.layoutControlItem24.Control = this.textBox19;
@@ -695,13 +772,6 @@ namespace FengXuTLTool
             this.layoutControlItem24.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem24.Text = "降低目标冰抵抗";
             this.layoutControlItem24.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(405, 564);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(172, 20);
-            this.textBox20.TabIndex = 29;
             // 
             // layoutControlItem25
             // 
@@ -713,13 +783,6 @@ namespace FengXuTLTool
             this.layoutControlItem25.Text = "火攻击";
             this.layoutControlItem25.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(121, 588);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(171, 20);
-            this.textBox21.TabIndex = 30;
-            // 
             // layoutControlItem26
             // 
             this.layoutControlItem26.Control = this.textBox21;
@@ -729,13 +792,6 @@ namespace FengXuTLTool
             this.layoutControlItem26.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem26.Text = "火防御";
             this.layoutControlItem26.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(405, 588);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(172, 20);
-            this.textBox22.TabIndex = 31;
             // 
             // layoutControlItem27
             // 
@@ -747,13 +803,6 @@ namespace FengXuTLTool
             this.layoutControlItem27.Text = "降低目标火抵抗";
             this.layoutControlItem27.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(121, 612);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(171, 20);
-            this.textBox23.TabIndex = 32;
-            // 
             // layoutControlItem28
             // 
             this.layoutControlItem28.Control = this.textBox23;
@@ -763,13 +812,6 @@ namespace FengXuTLTool
             this.layoutControlItem28.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem28.Text = "玄攻击";
             this.layoutControlItem28.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(405, 612);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(172, 20);
-            this.textBox24.TabIndex = 33;
             // 
             // layoutControlItem29
             // 
@@ -781,13 +823,6 @@ namespace FengXuTLTool
             this.layoutControlItem29.Text = "玄防御";
             this.layoutControlItem29.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(121, 636);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(171, 20);
-            this.textBox25.TabIndex = 34;
-            // 
             // layoutControlItem30
             // 
             this.layoutControlItem30.Control = this.textBox25;
@@ -797,13 +832,6 @@ namespace FengXuTLTool
             this.layoutControlItem30.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem30.Text = "降低目标玄抵抗";
             this.layoutControlItem30.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(405, 636);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(172, 20);
-            this.textBox26.TabIndex = 35;
             // 
             // layoutControlItem31
             // 
@@ -815,13 +843,6 @@ namespace FengXuTLTool
             this.layoutControlItem31.Text = "毒攻击";
             this.layoutControlItem31.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(121, 660);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(171, 20);
-            this.textBox27.TabIndex = 36;
-            // 
             // layoutControlItem32
             // 
             this.layoutControlItem32.Control = this.textBox27;
@@ -831,13 +852,6 @@ namespace FengXuTLTool
             this.layoutControlItem32.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem32.Text = "毒防御";
             this.layoutControlItem32.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(405, 660);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(172, 20);
-            this.textBox28.TabIndex = 37;
             // 
             // layoutControlItem33
             // 
@@ -849,13 +863,6 @@ namespace FengXuTLTool
             this.layoutControlItem33.Text = "降低目标毒抵抗";
             this.layoutControlItem33.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(121, 684);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(171, 20);
-            this.textBox29.TabIndex = 38;
-            // 
             // layoutControlItem34
             // 
             this.layoutControlItem34.Control = this.textBox29;
@@ -865,13 +872,6 @@ namespace FengXuTLTool
             this.layoutControlItem34.Size = new System.Drawing.Size(284, 24);
             this.layoutControlItem34.Text = "瞬时效果免疫ID";
             this.layoutControlItem34.TextSize = new System.Drawing.Size(106, 18);
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(405, 684);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(172, 20);
-            this.textBox30.TabIndex = 39;
             // 
             // layoutControlItem35
             // 
@@ -883,13 +883,13 @@ namespace FengXuTLTool
             this.layoutControlItem35.Text = "持续效果免疫ID";
             this.layoutControlItem35.TextSize = new System.Drawing.Size(106, 18);
             // 
-            // FrmEquip
+            // FrmMoni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 716);
             this.Controls.Add(this.layoutControl1);
-            this.Name = "FrmEquip";
+            this.Name = "FrmMoni";
             this.Text = "FrmEquip";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);

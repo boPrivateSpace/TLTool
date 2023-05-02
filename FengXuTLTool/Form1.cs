@@ -28,13 +28,16 @@ namespace FengXuTLTool
             }
         }
 
+        public string Index = "";
+        public string Name = "";
+        public int Num = 0;
         private FileModel _fileModel;
         private List<ArticleList> _articleLists = new List<ArticleList>();
 
         public void InitColumn()
         {
             this.grdvList.OptionsView.ShowGroupPanel = false;
-
+            this.grdvList.OptionsBehavior.Editable = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -170,6 +173,24 @@ namespace FengXuTLTool
             {
                 grdcList.DataSource = _articleLists;
             }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            ArticleList dr = (ArticleList)this.grdvList.GetFocusedRow();
+            if (dr == null)
+            {
+                return;
+            }
+
+            if (!string.IsNullOrEmpty(edtNum.Text))
+            {
+                this.Num = Convert.ToInt32(edtNum.Text);
+            }
+            this.Index = dr.Index;
+            this.Name = dr.Name;
+            
+            this.Close();
         }
     }
 

@@ -34,6 +34,7 @@ namespace FengXuTLTool
             this.载入数据ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.edtNum = new DevExpress.XtraEditors.TextEdit();
             this.edtQueryText = new DevExpress.XtraEditors.TextEdit();
             this.btnQuery = new DevExpress.XtraEditors.SimpleButton();
@@ -52,6 +53,8 @@ namespace FengXuTLTool
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -68,6 +71,8 @@ namespace FengXuTLTool
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -98,6 +103,7 @@ namespace FengXuTLTool
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.btnSave);
             this.layoutControl1.Controls.Add(this.edtNum);
             this.layoutControl1.Controls.Add(this.edtQueryText);
             this.layoutControl1.Controls.Add(this.btnQuery);
@@ -112,6 +118,16 @@ namespace FengXuTLTool
             this.layoutControl1.Size = new System.Drawing.Size(638, 624);
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(496, 587);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(130, 25);
+            this.btnSave.StyleController = this.layoutControl1;
+            this.btnSave.TabIndex = 11;
+            this.btnSave.Text = "确认";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // edtNum
             // 
@@ -154,7 +170,7 @@ namespace FengXuTLTool
             this.grdcList.Location = new System.Drawing.Point(12, 72);
             this.grdcList.MainView = this.grdvList;
             this.grdcList.Name = "grdcList";
-            this.grdcList.Size = new System.Drawing.Size(614, 540);
+            this.grdcList.Size = new System.Drawing.Size(614, 511);
             this.grdcList.TabIndex = 5;
             this.grdcList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdvList});
@@ -208,7 +224,9 @@ namespace FengXuTLTool
             this.layoutControlItem7,
             this.layoutControlItem1,
             this.layoutControlItem5,
-            this.layoutControlItem3});
+            this.layoutControlItem3,
+            this.layoutControlItem4,
+            this.emptySpaceItem4});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Size = new System.Drawing.Size(638, 624);
@@ -231,7 +249,7 @@ namespace FengXuTLTool
             this.layoutControlItem2.CustomizationFormText = "layoutControlItem2";
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 60);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(618, 544);
+            this.layoutControlItem2.Size = new System.Drawing.Size(618, 515);
             this.layoutControlItem2.Text = "layoutControlItem2";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextToControlDistance = 0;
@@ -318,6 +336,28 @@ namespace FengXuTLTool
             this.layoutControlItem3.TextToControlDistance = 0;
             this.layoutControlItem3.TextVisible = false;
             // 
+            // layoutControlItem4
+            // 
+            this.layoutControlItem4.Control = this.btnSave;
+            this.layoutControlItem4.CustomizationFormText = "layoutControlItem4";
+            this.layoutControlItem4.Location = new System.Drawing.Point(484, 575);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(134, 29);
+            this.layoutControlItem4.Text = "layoutControlItem4";
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem4.TextToControlDistance = 0;
+            this.layoutControlItem4.TextVisible = false;
+            // 
+            // emptySpaceItem4
+            // 
+            this.emptySpaceItem4.AllowHotTrack = false;
+            this.emptySpaceItem4.CustomizationFormText = "emptySpaceItem4";
+            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 575);
+            this.emptySpaceItem4.Name = "emptySpaceItem4";
+            this.emptySpaceItem4.Size = new System.Drawing.Size(484, 29);
+            this.emptySpaceItem4.Text = "emptySpaceItem4";
+            this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -351,6 +391,8 @@ namespace FengXuTLTool
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,6 +422,9 @@ namespace FengXuTLTool
         private DevExpress.XtraEditors.TextEdit edtNum;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private System.Windows.Forms.ToolStripMenuItem 载入数据ToolStripMenuItem;
+        private DevExpress.XtraEditors.SimpleButton btnSave;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
     }
 }
 
