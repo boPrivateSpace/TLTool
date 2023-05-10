@@ -149,7 +149,7 @@ namespace FengXuTLTool
         }
 
 
-        public static bool ExportToExcelOrTxt(DataTable dgvData, string fileName, List<string> columns)
+        public static bool ExportToExcelOrTxt(DataTable dgvData, string fileName, List<string> columns,bool isNeedTitle=true)
         {
             StreamWriter sw = new StreamWriter(fileName, false, Encoding.GetEncoding(-0));
             string str = "";
@@ -166,18 +166,19 @@ namespace FengXuTLTool
                 }
 
                 sw.WriteLine(str);
-
-                str = "";
-                for (int i = 0; i < dgvData.Columns.Count; i++)
+                if (isNeedTitle)
                 {
-                    if (!string.IsNullOrEmpty(str))
+                    str = "";
+                    for (int i = 0; i < dgvData.Columns.Count; i++)
                     {
-                        str += "\t";
+                        if (!string.IsNullOrEmpty(str))
+                        {
+                            str += "\t";
+                        }
+                        str += dgvData.Columns[i].ColumnName;
                     }
-                    str += dgvData.Columns[i].ColumnName;
+                    sw.WriteLine(str);
                 }
-                //str += "\t" + "时间戳";
-                sw.WriteLine(str);
                 sw.WriteLine("#风絮商店工具修改 By:QQ464141564");
 
                 //写内容

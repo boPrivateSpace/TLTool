@@ -18,6 +18,11 @@ namespace FengXuTLTool
         }
 
 
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+
+            System.Environment.Exit(0);
+        }
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {

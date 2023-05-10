@@ -61,18 +61,23 @@ namespace FengXuTLTool
             //逐行读取txt中的数據
             while ((strLine = sr.ReadLine()) != null)
             {
+                if (strLine.Contains('#'))
+                {
+                    continue;
+                }
                 aryLine = strLine.Split('\t');//tab分隔符
                 string Id = string.Empty;
                 StringBuilder str = new StringBuilder();
                 for (int j = 0; j < columnCount; j++)
                 {
+
                     if (j == 0)
                     {
                         Id = aryLine[j].ToString();
                     }
                     else
                     {
-                        if (aryLine[j] != null && aryLine[j].ToString() != "-1")
+                        if (aryLine[j] != null && aryLine[j].ToString() != "-1" &&!string.IsNullOrEmpty(aryLine[j]))
                         {
                             var ss = articleLists.Where(x => x.Index == aryLine[j].ToString()).FirstOrDefault();
                             if (ss!=null)
@@ -136,6 +141,7 @@ namespace FengXuTLTool
             }
             // 去掉空余行
             sr.ReadLine();
+            List<string> mon = new List<string>();
             //逐行读取txt中的数據
             while ((strLine = sr.ReadLine()) != null)
             {
@@ -144,23 +150,27 @@ namespace FengXuTLTool
                 {
                     continue;
                 }
+
+
                 StringBuilder str = new StringBuilder();
+                var ss = ArticleBase.MonsterAttrExs.Where(x => x.Index == aryLine[0].ToString()).FirstOrDefault();
+                if (ss == null)
+                {
+                    continue;
+                }
+                if (mon.Contains(ss.Name))
+                {
+                    continue;
+                }
+
+                str.Append(ss.Name + '\t');
+                mon.Add(ss.Name);
                 try
                 {
-                    for (int j = 0; j < columnCount; j++)
+                    for (int j = 3; j < columnCount; j++)
                     {
-                        if (j == 1 || j == 2)
-                        {
-                            continue;
-                        }
                         if (aryLine[j] != null && aryLine[j].ToString() != "-1")
                         {
-                            var ss = ArticleBase.MonsterAttrExs.Where(x => x.Index == aryLine[j].ToString()).FirstOrDefault();
-                            if (ss != null && j == 0)
-                            {
-                                str.Append(ss.Name + '\t');
-                                continue;
-                            }
                             var cx = keyValuePairs.Where(x => x.Key == aryLine[j]).Select(x => x.Value).FirstOrDefault();
                             if (cx != null)
                             {

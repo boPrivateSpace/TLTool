@@ -33,7 +33,7 @@ namespace FengXuTLTool
         public int Num = 0;
         private FileModel _fileModel;
         private List<ArticleList> _articleLists = new List<ArticleList>();
-
+        private List<CDKCode> cDKCodes = new List<CDKCode>();
         public void InitColumn()
         {
             this.grdvList.OptionsView.ShowGroupPanel = false;
@@ -43,7 +43,7 @@ namespace FengXuTLTool
         private void Form1_Load(object sender, EventArgs e)
         {
             _fileModel = new FileModel();
-            var fileModel = JsonFile.ReadJsonFile();
+            var fileModel = JsonFile.ReadJsonConfigFile();
             if (fileModel != null)
             {
                 _fileModel = fileModel;
@@ -92,23 +92,11 @@ namespace FengXuTLTool
             }
             StringBuilder stringBuilder = new StringBuilder();
 
-            stringBuilder.Append(getRandomDom());
-            stringBuilder.Append("             ");
-            stringBuilder.Append(dr.Index);
-            stringBuilder.Append("             ");
-            stringBuilder.Append(string.IsNullOrEmpty(this.edtNum.Text)?"1": this.edtNum.Text);
-
-
-            //第二种方法，比较简单
-            //\r\n要加在前面才会换行！
-            if (!File.Exists(_fileModel.FileName))
-            {
-                File.AppendAllText(_fileModel.FileName, stringBuilder.ToString());
-            }
-            else
-            {
-                File.AppendAllText(_fileModel.FileName, "\r\n" + stringBuilder.ToString());
-            }
+            CDKCode cDKCode = new CDKCode();
+            cDKCode.Code = getRandomDom();
+            cDKCode.Index = dr.Index;
+            cDKCode.Num = this.edtNum.Text;
+            cDKCodes.Add(cDKCode);
         }
 
 
@@ -117,7 +105,7 @@ namespace FengXuTLTool
         /// </summary>
         /// <param name="count">输入字符串长度</param>
         /// <returns>字符串</returns>
-        public static string getRandomDom(int count = 11)
+        public static string getRandomDom(int count = 24)
         {
             string t62 = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -125,7 +113,7 @@ namespace FengXuTLTool
 
             string gen = "";
             int ind = 0;
-            while (ind < count)
+            while (ind < 36)
             {
                 byte low = (byte)((ticks >> ind * 6) & 61);
                 gen += t62[low];
@@ -192,9 +180,15 @@ namespace FengXuTLTool
             
             this.Close();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+            DataTable xyjShop = ModelTool.ModelsToDataTable<CDKCode>(cDKCodes);
+
+
+            Excel.ExportToExcelOrTxt(xyjShop, "Cdk.txt", new List<string>(),false);
+
+        }
     }
-
-
-
-
 }

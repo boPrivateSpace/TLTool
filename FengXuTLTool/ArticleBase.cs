@@ -53,69 +53,62 @@ namespace FengXuTLTool
         {
 
             _articleLists = new List<ArticleList>();
-            Task task = Task.Run(() =>
+            DataTable dt = Excel.TXTToDataTable("CommonItem.txt", string.Empty);
+            //循环遍历所有的行，将值赋值给List
+            for (int i = 0; i < dt.Rows.Count; i++)
             {
-                DataTable dt = Excel.TXTToDataTable("CommonItem.txt", string.Empty);
-                //循环遍历所有的行，将值赋值给List
-                for (int i = 0; i < dt.Rows.Count; i++)
+                if (dt.Rows[i]["NAME$1$"].ToString().Contains("未使用") || dt.Rows[i]["NAME$1$"].ToString().Contains("未知") || dt.Rows[i]["NAME$1$"].ToString().Contains("废弃") || string.IsNullOrEmpty(dt.Rows[i]["NAME$1$"].ToString()))
                 {
-                    if (dt.Rows[i]["NAME$1$"].ToString().Contains("未使用") || dt.Rows[i]["NAME$1$"].ToString().Contains("未知") || dt.Rows[i]["NAME$1$"].ToString().Contains("废弃") || string.IsNullOrEmpty(dt.Rows[i]["NAME$1$"].ToString()))
+                    continue;
+                }
+                _articleLists.Add(new ArticleList
+                {
+                    Index = dt.Rows[i]["INDEX"].ToString(),
+                    Name = dt.Rows[i]["NAME$1$"].ToString(),
+                });
+            }
+
+
+            DataTable dt1 = Excel.TXTToDataTable("EquipBase.txt", string.Empty);
+            //循环遍历所有的行，将值赋值给List
+            for (int i = 0; i < dt1.Rows.Count; i++)
+            {
+                try
+                {
+                    if (dt1.Rows[i].IsNull("NAME(名称)$1$"))
                     {
                         continue;
                     }
+                    if (dt1.Rows[i]["NAME(名称)$1$"].ToString().Contains("未使用"))
+                    {
+                        continue;
+                    }
+
+                    if (dt1.Rows[i]["NAME(名称)$1$"].ToString().Contains("废弃"))
+                    {
+                        continue;
+                    }
+                    if (string.IsNullOrEmpty(dt1.Rows[i]["NAME(名称)$1$"].ToString()))
+                    {
+                        continue;
+                    }
+
                     _articleLists.Add(new ArticleList
                     {
-                        Index = dt.Rows[i]["INDEX"].ToString(),
-                        Name = dt.Rows[i]["NAME$1$"].ToString(),
+                        Index = dt1.Rows[i]["INDEX"].ToString(),
+                        Name = dt1.Rows[i]["NAME(名称)$1$"].ToString(),
                     });
                 }
-            });
-
-
-            Task task1 = Task.Run(() =>
-            {
-                DataTable dt1 = Excel.TXTToDataTable("EquipBase.txt", string.Empty);
-                //循环遍历所有的行，将值赋值给List
-                for (int i = 0; i < dt1.Rows.Count; i++)
+                catch
                 {
-                    try
-                    {
-                        if (dt1.Rows[i].IsNull("NAME(名称)$1$"))
-                        {
-                            continue;
-                        }
-                        if (dt1.Rows[i]["NAME(名称)$1$"].ToString().Contains("未使用"))
-                        {
-                            continue;
-                        }
 
-                        if (dt1.Rows[i]["NAME(名称)$1$"].ToString().Contains("废弃"))
-                        {
-                            continue;
-                        }
-                        if (string.IsNullOrEmpty(dt1.Rows[i]["NAME(名称)$1$"].ToString()))
-                        {
-                            continue;
-                        }
-
-                        _articleLists.Add(new ArticleList
-                        {
-                            Index = dt1.Rows[i]["INDEX"].ToString(),
-                            Name = dt1.Rows[i]["NAME(名称)$1$"].ToString(),
-                        });
-                    }
-                    catch
-                    {
-
-                    }
-                    finally
-                    {
-
-                    }
+                }
+                finally
+                {
 
                 }
 
-            });
+            }
 
 
 

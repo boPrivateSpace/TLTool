@@ -93,21 +93,15 @@ namespace FengXuTLTool
             this.layoutControlItem44 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem40 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem8 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.btnSaveFile = new DevExpress.XtraEditors.SimpleButton();
             this.btnLoad = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.edtPrice = new DevExpress.XtraEditors.TextEdit();
-            this.edtName = new DevExpress.XtraEditors.TextEdit();
-            this.edtNum = new DevExpress.XtraEditors.TextEdit();
-            this.edtWpIndex = new DevExpress.XtraEditors.TextEdit();
             this.grdcList = new DevExpress.XtraGrid.GridControl();
             this.grdvList = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -117,8 +111,13 @@ namespace FengXuTLTool
             this.layoutControlItem25 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textEdit1 = new DevExpress.XtraEditors.MemoEdit();
+            this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem7 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.edtEq = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.btnQueryLocation = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem9 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -164,18 +163,12 @@ namespace FengXuTLTool
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtPrice.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtNum.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtWpIndex.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdcList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdvList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
@@ -185,27 +178,29 @@ namespace FengXuTLTool
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edtEq.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem9)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.btnQueryLocation);
+            this.layoutControl1.Controls.Add(this.edtEq);
             this.layoutControl1.Controls.Add(this.splitContainer1);
             this.layoutControl1.Controls.Add(this.btnSaveFile);
             this.layoutControl1.Controls.Add(this.btnLoad);
             this.layoutControl1.Controls.Add(this.btnSave);
-            this.layoutControl1.Controls.Add(this.edtPrice);
-            this.layoutControl1.Controls.Add(this.edtName);
-            this.layoutControl1.Controls.Add(this.edtNum);
-            this.layoutControl1.Controls.Add(this.edtWpIndex);
             this.layoutControl1.Controls.Add(this.grdcList);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
-            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(827, 331, 515, 350);
+            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(393, 635, 515, 350);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(1205, 877);
+            this.layoutControl1.Size = new System.Drawing.Size(1104, 877);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -221,8 +216,8 @@ namespace FengXuTLTool
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.layoutControl2);
-            this.splitContainer1.Size = new System.Drawing.Size(1181, 377);
-            this.splitContainer1.SplitterDistance = 412;
+            this.splitContainer1.Size = new System.Drawing.Size(1080, 365);
+            this.splitContainer1.SplitterDistance = 376;
             this.splitContainer1.TabIndex = 21;
             // 
             // layoutControl3
@@ -236,15 +231,15 @@ namespace FengXuTLTool
             this.layoutControl3.Name = "layoutControl3";
             this.layoutControl3.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(566, 261, 250, 350);
             this.layoutControl3.Root = this.layoutControlGroup4;
-            this.layoutControl3.Size = new System.Drawing.Size(412, 377);
+            this.layoutControl3.Size = new System.Drawing.Size(376, 365);
             this.layoutControl3.TabIndex = 0;
             this.layoutControl3.Text = "layoutControl3";
             // 
             // btnEqAdd
             // 
-            this.btnEqAdd.Location = new System.Drawing.Point(256, 340);
+            this.btnEqAdd.Location = new System.Drawing.Point(234, 328);
             this.btnEqAdd.Name = "btnEqAdd";
-            this.btnEqAdd.Size = new System.Drawing.Size(144, 25);
+            this.btnEqAdd.Size = new System.Drawing.Size(130, 25);
             this.btnEqAdd.StyleController = this.layoutControl3;
             this.btnEqAdd.TabIndex = 7;
             this.btnEqAdd.Text = "添加";
@@ -252,9 +247,9 @@ namespace FengXuTLTool
             // 
             // btnQuery
             // 
-            this.btnQuery.Location = new System.Drawing.Point(309, 12);
+            this.btnQuery.Location = new System.Drawing.Point(282, 12);
             this.btnQuery.Name = "btnQuery";
-            this.btnQuery.Size = new System.Drawing.Size(91, 25);
+            this.btnQuery.Size = new System.Drawing.Size(82, 25);
             this.btnQuery.StyleController = this.layoutControl3;
             this.btnQuery.TabIndex = 6;
             this.btnQuery.Text = "查询";
@@ -264,7 +259,7 @@ namespace FengXuTLTool
             // 
             this.edtEqName.Location = new System.Drawing.Point(45, 12);
             this.edtEqName.Name = "edtEqName";
-            this.edtEqName.Size = new System.Drawing.Size(184, 24);
+            this.edtEqName.Size = new System.Drawing.Size(164, 24);
             this.edtEqName.StyleController = this.layoutControl3;
             this.edtEqName.TabIndex = 5;
             // 
@@ -273,10 +268,11 @@ namespace FengXuTLTool
             this.grdcEq.Location = new System.Drawing.Point(12, 41);
             this.grdcEq.MainView = this.grdvEq;
             this.grdcEq.Name = "grdcEq";
-            this.grdcEq.Size = new System.Drawing.Size(388, 295);
+            this.grdcEq.Size = new System.Drawing.Size(352, 283);
             this.grdcEq.TabIndex = 4;
             this.grdcEq.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdvEq});
+            this.grdcEq.DoubleClick += new System.EventHandler(this.grdcEq_DoubleClick);
             // 
             // grdvEq
             // 
@@ -297,7 +293,7 @@ namespace FengXuTLTool
             this.emptySpaceItem5});
             this.layoutControlGroup4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup4.Name = "Root";
-            this.layoutControlGroup4.Size = new System.Drawing.Size(412, 377);
+            this.layoutControlGroup4.Size = new System.Drawing.Size(376, 365);
             this.layoutControlGroup4.Text = "Root";
             this.layoutControlGroup4.TextVisible = false;
             // 
@@ -307,7 +303,7 @@ namespace FengXuTLTool
             this.layoutControlItem2.CustomizationFormText = "layoutControlItem2";
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 29);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(392, 299);
+            this.layoutControlItem2.Size = new System.Drawing.Size(356, 287);
             this.layoutControlItem2.Text = "layoutControlItem2";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextToControlDistance = 0;
@@ -319,7 +315,7 @@ namespace FengXuTLTool
             this.layoutControlItem3.CustomizationFormText = "名称";
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(221, 29);
+            this.layoutControlItem3.Size = new System.Drawing.Size(201, 29);
             this.layoutControlItem3.Text = "名称";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(30, 18);
             // 
@@ -327,9 +323,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem4.Control = this.btnQuery;
             this.layoutControlItem4.CustomizationFormText = "layoutControlItem4";
-            this.layoutControlItem4.Location = new System.Drawing.Point(297, 0);
+            this.layoutControlItem4.Location = new System.Drawing.Point(270, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(95, 29);
+            this.layoutControlItem4.Size = new System.Drawing.Size(86, 29);
             this.layoutControlItem4.Text = "layoutControlItem4";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextToControlDistance = 0;
@@ -339,9 +335,9 @@ namespace FengXuTLTool
             // 
             this.emptySpaceItem4.AllowHotTrack = false;
             this.emptySpaceItem4.CustomizationFormText = "emptySpaceItem4";
-            this.emptySpaceItem4.Location = new System.Drawing.Point(221, 0);
+            this.emptySpaceItem4.Location = new System.Drawing.Point(201, 0);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(76, 29);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(69, 29);
             this.emptySpaceItem4.Text = "emptySpaceItem4";
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -349,9 +345,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem5.Control = this.btnEqAdd;
             this.layoutControlItem5.CustomizationFormText = "layoutControlItem5";
-            this.layoutControlItem5.Location = new System.Drawing.Point(244, 328);
+            this.layoutControlItem5.Location = new System.Drawing.Point(222, 316);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(148, 29);
+            this.layoutControlItem5.Size = new System.Drawing.Size(134, 29);
             this.layoutControlItem5.Text = "layoutControlItem5";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextToControlDistance = 0;
@@ -361,9 +357,9 @@ namespace FengXuTLTool
             // 
             this.emptySpaceItem5.AllowHotTrack = false;
             this.emptySpaceItem5.CustomizationFormText = "emptySpaceItem5";
-            this.emptySpaceItem5.Location = new System.Drawing.Point(0, 328);
+            this.emptySpaceItem5.Location = new System.Drawing.Point(0, 316);
             this.emptySpaceItem5.Name = "emptySpaceItem5";
-            this.emptySpaceItem5.Size = new System.Drawing.Size(244, 29);
+            this.emptySpaceItem5.Size = new System.Drawing.Size(222, 29);
             this.emptySpaceItem5.Text = "emptySpaceItem5";
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -391,13 +387,12 @@ namespace FengXuTLTool
             this.layoutControl2.Controls.Add(this.Index_3);
             this.layoutControl2.Controls.Add(this.Index_2);
             this.layoutControl2.Controls.Add(this.Index_1);
-            this.layoutControl2.Controls.Add(this.textEdit1);
             this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl2.Location = new System.Drawing.Point(0, 0);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1156, 388, 591, 560);
             this.layoutControl2.Root = this.layoutControlGroup2;
-            this.layoutControl2.Size = new System.Drawing.Size(765, 377);
+            this.layoutControl2.Size = new System.Drawing.Size(700, 365);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
@@ -405,9 +400,9 @@ namespace FengXuTLTool
             // 
             this.MenuIndex_7.Appearance.BackColor = System.Drawing.Color.White;
             this.MenuIndex_7.Appearance.Options.UseBackColor = true;
-            this.MenuIndex_7.Location = new System.Drawing.Point(384, 82);
+            this.MenuIndex_7.Location = new System.Drawing.Point(321, 82);
             this.MenuIndex_7.Name = "MenuIndex_7";
-            this.MenuIndex_7.Size = new System.Drawing.Size(176, 25);
+            this.MenuIndex_7.Size = new System.Drawing.Size(160, 25);
             this.MenuIndex_7.StyleController = this.layoutControl2;
             this.MenuIndex_7.TabIndex = 27;
             this.MenuIndex_7.Text = "商城7";
@@ -421,18 +416,18 @@ namespace FengXuTLTool
             this.MenuIndex_8.Appearance.Options.UseBackColor = true;
             this.MenuIndex_8.Appearance.Options.UseBorderColor = true;
             this.MenuIndex_8.Appearance.Options.UseForeColor = true;
-            this.MenuIndex_8.Location = new System.Drawing.Point(564, 82);
+            this.MenuIndex_8.Location = new System.Drawing.Point(485, 82);
             this.MenuIndex_8.Name = "MenuIndex_8";
-            this.MenuIndex_8.Size = new System.Drawing.Size(176, 25);
+            this.MenuIndex_8.Size = new System.Drawing.Size(170, 25);
             this.MenuIndex_8.StyleController = this.layoutControl2;
             this.MenuIndex_8.TabIndex = 26;
             this.MenuIndex_8.Text = "商城8";
             // 
             // MenuIndex_6
             // 
-            this.MenuIndex_6.Location = new System.Drawing.Point(204, 82);
+            this.MenuIndex_6.Location = new System.Drawing.Point(183, 82);
             this.MenuIndex_6.Name = "MenuIndex_6";
-            this.MenuIndex_6.Size = new System.Drawing.Size(176, 25);
+            this.MenuIndex_6.Size = new System.Drawing.Size(134, 25);
             this.MenuIndex_6.StyleController = this.layoutControl2;
             this.MenuIndex_6.TabIndex = 23;
             this.MenuIndex_6.Text = "商城6";
@@ -441,34 +436,34 @@ namespace FengXuTLTool
             // 
             this.MenuIndex_5.Location = new System.Drawing.Point(24, 82);
             this.MenuIndex_5.Name = "MenuIndex_5";
-            this.MenuIndex_5.Size = new System.Drawing.Size(176, 25);
+            this.MenuIndex_5.Size = new System.Drawing.Size(155, 25);
             this.MenuIndex_5.StyleController = this.layoutControl2;
             this.MenuIndex_5.TabIndex = 22;
             this.MenuIndex_5.Text = "商城5";
             // 
             // MenuIndex_4
             // 
-            this.MenuIndex_4.Location = new System.Drawing.Point(564, 53);
+            this.MenuIndex_4.Location = new System.Drawing.Point(485, 53);
             this.MenuIndex_4.Name = "MenuIndex_4";
-            this.MenuIndex_4.Size = new System.Drawing.Size(176, 25);
+            this.MenuIndex_4.Size = new System.Drawing.Size(170, 25);
             this.MenuIndex_4.StyleController = this.layoutControl2;
             this.MenuIndex_4.TabIndex = 21;
             this.MenuIndex_4.Text = "商城4";
             // 
             // MenuIndex_3
             // 
-            this.MenuIndex_3.Location = new System.Drawing.Point(384, 53);
+            this.MenuIndex_3.Location = new System.Drawing.Point(320, 53);
             this.MenuIndex_3.Name = "MenuIndex_3";
-            this.MenuIndex_3.Size = new System.Drawing.Size(176, 25);
+            this.MenuIndex_3.Size = new System.Drawing.Size(161, 25);
             this.MenuIndex_3.StyleController = this.layoutControl2;
             this.MenuIndex_3.TabIndex = 20;
             this.MenuIndex_3.Text = "商城3";
             // 
             // MenuIndex_2
             // 
-            this.MenuIndex_2.Location = new System.Drawing.Point(204, 53);
+            this.MenuIndex_2.Location = new System.Drawing.Point(183, 53);
             this.MenuIndex_2.Name = "MenuIndex_2";
-            this.MenuIndex_2.Size = new System.Drawing.Size(176, 25);
+            this.MenuIndex_2.Size = new System.Drawing.Size(133, 25);
             this.MenuIndex_2.StyleController = this.layoutControl2;
             this.MenuIndex_2.TabIndex = 19;
             this.MenuIndex_2.Text = "商城2";
@@ -477,7 +472,7 @@ namespace FengXuTLTool
             // 
             this.MenuIndex_1.Location = new System.Drawing.Point(24, 53);
             this.MenuIndex_1.Name = "MenuIndex_1";
-            this.MenuIndex_1.Size = new System.Drawing.Size(176, 25);
+            this.MenuIndex_1.Size = new System.Drawing.Size(155, 25);
             this.MenuIndex_1.StyleController = this.layoutControl2;
             this.MenuIndex_1.TabIndex = 18;
             this.MenuIndex_1.Text = "商城1";
@@ -486,7 +481,7 @@ namespace FengXuTLTool
             // 
             this.ShopIndex_8.Location = new System.Drawing.Point(24, 324);
             this.ShopIndex_8.Name = "ShopIndex_8";
-            this.ShopIndex_8.Size = new System.Drawing.Size(129, 25);
+            this.ShopIndex_8.Size = new System.Drawing.Size(113, 25);
             this.ShopIndex_8.StyleController = this.layoutControl2;
             this.ShopIndex_8.TabIndex = 17;
             this.ShopIndex_8.Text = "商店8";
@@ -495,7 +490,7 @@ namespace FengXuTLTool
             // 
             this.ShopIndex_7.Location = new System.Drawing.Point(24, 295);
             this.ShopIndex_7.Name = "ShopIndex_7";
-            this.ShopIndex_7.Size = new System.Drawing.Size(129, 25);
+            this.ShopIndex_7.Size = new System.Drawing.Size(113, 25);
             this.ShopIndex_7.StyleController = this.layoutControl2;
             this.ShopIndex_7.TabIndex = 16;
             this.ShopIndex_7.Text = "商店7";
@@ -504,7 +499,7 @@ namespace FengXuTLTool
             // 
             this.ShopIndex_6.Location = new System.Drawing.Point(24, 266);
             this.ShopIndex_6.Name = "ShopIndex_6";
-            this.ShopIndex_6.Size = new System.Drawing.Size(129, 25);
+            this.ShopIndex_6.Size = new System.Drawing.Size(113, 25);
             this.ShopIndex_6.StyleController = this.layoutControl2;
             this.ShopIndex_6.TabIndex = 15;
             this.ShopIndex_6.Text = "商店6";
@@ -513,7 +508,7 @@ namespace FengXuTLTool
             // 
             this.ShopIndex_5.Location = new System.Drawing.Point(24, 237);
             this.ShopIndex_5.Name = "ShopIndex_5";
-            this.ShopIndex_5.Size = new System.Drawing.Size(129, 25);
+            this.ShopIndex_5.Size = new System.Drawing.Size(113, 25);
             this.ShopIndex_5.StyleController = this.layoutControl2;
             this.ShopIndex_5.TabIndex = 14;
             this.ShopIndex_5.Text = "商店5";
@@ -522,7 +517,7 @@ namespace FengXuTLTool
             // 
             this.ShopIndex_4.Location = new System.Drawing.Point(24, 208);
             this.ShopIndex_4.Name = "ShopIndex_4";
-            this.ShopIndex_4.Size = new System.Drawing.Size(129, 25);
+            this.ShopIndex_4.Size = new System.Drawing.Size(113, 25);
             this.ShopIndex_4.StyleController = this.layoutControl2;
             this.ShopIndex_4.TabIndex = 13;
             this.ShopIndex_4.Text = "商店4";
@@ -531,7 +526,7 @@ namespace FengXuTLTool
             // 
             this.ShopIndex_3.Location = new System.Drawing.Point(24, 179);
             this.ShopIndex_3.Name = "ShopIndex_3";
-            this.ShopIndex_3.Size = new System.Drawing.Size(129, 25);
+            this.ShopIndex_3.Size = new System.Drawing.Size(113, 25);
             this.ShopIndex_3.StyleController = this.layoutControl2;
             this.ShopIndex_3.TabIndex = 12;
             this.ShopIndex_3.Text = "商店3";
@@ -540,7 +535,7 @@ namespace FengXuTLTool
             // 
             this.ShopIndex_2.Location = new System.Drawing.Point(24, 150);
             this.ShopIndex_2.Name = "ShopIndex_2";
-            this.ShopIndex_2.Size = new System.Drawing.Size(129, 25);
+            this.ShopIndex_2.Size = new System.Drawing.Size(113, 25);
             this.ShopIndex_2.StyleController = this.layoutControl2;
             this.ShopIndex_2.TabIndex = 11;
             this.ShopIndex_2.Text = "商店2";
@@ -549,52 +544,52 @@ namespace FengXuTLTool
             // 
             this.ShopIndex_1.Location = new System.Drawing.Point(24, 121);
             this.ShopIndex_1.Name = "ShopIndex_1";
-            this.ShopIndex_1.Size = new System.Drawing.Size(129, 25);
+            this.ShopIndex_1.Size = new System.Drawing.Size(113, 25);
             this.ShopIndex_1.StyleController = this.layoutControl2;
             this.ShopIndex_1.TabIndex = 10;
             this.ShopIndex_1.Text = "商店1";
             // 
             // Index_6
             // 
-            this.Index_6.Location = new System.Drawing.Point(542, 12);
+            this.Index_6.Location = new System.Drawing.Point(357, 12);
             this.Index_6.Name = "Index_6";
-            this.Index_6.Size = new System.Drawing.Size(102, 25);
+            this.Index_6.Size = new System.Drawing.Size(64, 25);
             this.Index_6.StyleController = this.layoutControl2;
             this.Index_6.TabIndex = 9;
             this.Index_6.Text = "商店6";
             // 
             // Index_5
             // 
-            this.Index_5.Location = new System.Drawing.Point(436, 12);
+            this.Index_5.Location = new System.Drawing.Point(288, 12);
             this.Index_5.Name = "Index_5";
-            this.Index_5.Size = new System.Drawing.Size(102, 25);
+            this.Index_5.Size = new System.Drawing.Size(65, 25);
             this.Index_5.StyleController = this.layoutControl2;
             this.Index_5.TabIndex = 8;
             this.Index_5.Text = "商店5";
             // 
             // Index_4
             // 
-            this.Index_4.Location = new System.Drawing.Point(330, 12);
+            this.Index_4.Location = new System.Drawing.Point(219, 12);
             this.Index_4.Name = "Index_4";
-            this.Index_4.Size = new System.Drawing.Size(102, 25);
+            this.Index_4.Size = new System.Drawing.Size(65, 25);
             this.Index_4.StyleController = this.layoutControl2;
             this.Index_4.TabIndex = 7;
             this.Index_4.Text = "商店4";
             // 
             // Index_3
             // 
-            this.Index_3.Location = new System.Drawing.Point(224, 12);
+            this.Index_3.Location = new System.Drawing.Point(150, 12);
             this.Index_3.Name = "Index_3";
-            this.Index_3.Size = new System.Drawing.Size(102, 25);
+            this.Index_3.Size = new System.Drawing.Size(65, 25);
             this.Index_3.StyleController = this.layoutControl2;
             this.Index_3.TabIndex = 6;
             this.Index_3.Text = "商店3";
             // 
             // Index_2
             // 
-            this.Index_2.Location = new System.Drawing.Point(118, 12);
+            this.Index_2.Location = new System.Drawing.Point(81, 12);
             this.Index_2.Name = "Index_2";
-            this.Index_2.Size = new System.Drawing.Size(102, 25);
+            this.Index_2.Size = new System.Drawing.Size(65, 25);
             this.Index_2.StyleController = this.layoutControl2;
             this.Index_2.TabIndex = 5;
             this.Index_2.Text = "商店2";
@@ -603,7 +598,7 @@ namespace FengXuTLTool
             // 
             this.Index_1.Location = new System.Drawing.Point(12, 12);
             this.Index_1.Name = "Index_1";
-            this.Index_1.Size = new System.Drawing.Size(102, 25);
+            this.Index_1.Size = new System.Drawing.Size(65, 25);
             this.Index_1.StyleController = this.layoutControl2;
             this.Index_1.TabIndex = 4;
             this.Index_1.Text = "商店1";
@@ -620,10 +615,11 @@ namespace FengXuTLTool
             this.layoutControlItem22,
             this.layoutControlItem23,
             this.layoutControlItem24,
-            this.layoutControlGroup3});
+            this.layoutControlGroup3,
+            this.emptySpaceItem8});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "Root";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(765, 377);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(679, 373);
             this.layoutControlGroup2.Text = "Root";
             this.layoutControlGroup2.TextVisible = false;
             // 
@@ -632,11 +628,8 @@ namespace FengXuTLTool
             this.layoutControlItem19.Control = this.Index_1;
             this.layoutControlItem19.CustomizationFormText = "layoutControlItem19";
             this.layoutControlItem19.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem19.MaxSize = new System.Drawing.Size(106, 29);
-            this.layoutControlItem19.MinSize = new System.Drawing.Size(106, 29);
             this.layoutControlItem19.Name = "layoutControlItem19";
-            this.layoutControlItem19.Size = new System.Drawing.Size(106, 29);
-            this.layoutControlItem19.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem19.Size = new System.Drawing.Size(69, 29);
             this.layoutControlItem19.Text = "layoutControlItem19";
             this.layoutControlItem19.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem19.TextToControlDistance = 0;
@@ -646,12 +639,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem20.Control = this.Index_2;
             this.layoutControlItem20.CustomizationFormText = "layoutControlItem20";
-            this.layoutControlItem20.Location = new System.Drawing.Point(106, 0);
-            this.layoutControlItem20.MaxSize = new System.Drawing.Size(106, 29);
-            this.layoutControlItem20.MinSize = new System.Drawing.Size(106, 29);
+            this.layoutControlItem20.Location = new System.Drawing.Point(69, 0);
             this.layoutControlItem20.Name = "layoutControlItem20";
-            this.layoutControlItem20.Size = new System.Drawing.Size(106, 29);
-            this.layoutControlItem20.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem20.Size = new System.Drawing.Size(69, 29);
             this.layoutControlItem20.Text = "layoutControlItem20";
             this.layoutControlItem20.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem20.TextToControlDistance = 0;
@@ -661,12 +651,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem21.Control = this.Index_3;
             this.layoutControlItem21.CustomizationFormText = "layoutControlItem21";
-            this.layoutControlItem21.Location = new System.Drawing.Point(212, 0);
-            this.layoutControlItem21.MaxSize = new System.Drawing.Size(106, 29);
-            this.layoutControlItem21.MinSize = new System.Drawing.Size(106, 29);
+            this.layoutControlItem21.Location = new System.Drawing.Point(138, 0);
             this.layoutControlItem21.Name = "layoutControlItem21";
-            this.layoutControlItem21.Size = new System.Drawing.Size(106, 29);
-            this.layoutControlItem21.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem21.Size = new System.Drawing.Size(69, 29);
             this.layoutControlItem21.Text = "layoutControlItem21";
             this.layoutControlItem21.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem21.TextToControlDistance = 0;
@@ -676,12 +663,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem22.Control = this.Index_4;
             this.layoutControlItem22.CustomizationFormText = "layoutControlItem22";
-            this.layoutControlItem22.Location = new System.Drawing.Point(318, 0);
-            this.layoutControlItem22.MaxSize = new System.Drawing.Size(106, 29);
-            this.layoutControlItem22.MinSize = new System.Drawing.Size(106, 29);
+            this.layoutControlItem22.Location = new System.Drawing.Point(207, 0);
             this.layoutControlItem22.Name = "layoutControlItem22";
-            this.layoutControlItem22.Size = new System.Drawing.Size(106, 29);
-            this.layoutControlItem22.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem22.Size = new System.Drawing.Size(69, 29);
             this.layoutControlItem22.Text = "layoutControlItem22";
             this.layoutControlItem22.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem22.TextToControlDistance = 0;
@@ -691,12 +675,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem23.Control = this.Index_5;
             this.layoutControlItem23.CustomizationFormText = "layoutControlItem23";
-            this.layoutControlItem23.Location = new System.Drawing.Point(424, 0);
-            this.layoutControlItem23.MaxSize = new System.Drawing.Size(106, 29);
-            this.layoutControlItem23.MinSize = new System.Drawing.Size(106, 29);
+            this.layoutControlItem23.Location = new System.Drawing.Point(276, 0);
             this.layoutControlItem23.Name = "layoutControlItem23";
-            this.layoutControlItem23.Size = new System.Drawing.Size(106, 29);
-            this.layoutControlItem23.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem23.Size = new System.Drawing.Size(69, 29);
             this.layoutControlItem23.Text = "layoutControlItem23";
             this.layoutControlItem23.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem23.TextToControlDistance = 0;
@@ -706,12 +687,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem24.Control = this.Index_6;
             this.layoutControlItem24.CustomizationFormText = "layoutControlItem24";
-            this.layoutControlItem24.Location = new System.Drawing.Point(530, 0);
-            this.layoutControlItem24.MaxSize = new System.Drawing.Size(106, 29);
-            this.layoutControlItem24.MinSize = new System.Drawing.Size(106, 29);
+            this.layoutControlItem24.Location = new System.Drawing.Point(345, 0);
             this.layoutControlItem24.Name = "layoutControlItem24";
-            this.layoutControlItem24.Size = new System.Drawing.Size(215, 29);
-            this.layoutControlItem24.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem24.Size = new System.Drawing.Size(68, 29);
             this.layoutControlItem24.Text = "layoutControlItem24";
             this.layoutControlItem24.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem24.TextToControlDistance = 0;
@@ -742,7 +720,7 @@ namespace FengXuTLTool
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 29);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
             this.layoutControlGroup3.ShowInCustomizationForm = false;
-            this.layoutControlGroup3.Size = new System.Drawing.Size(745, 328);
+            this.layoutControlGroup3.Size = new System.Drawing.Size(659, 324);
             this.layoutControlGroup3.Text = "layoutControlGroup3";
             this.layoutControlGroup3.TextVisible = false;
             // 
@@ -752,7 +730,7 @@ namespace FengXuTLTool
             this.layoutControlItem32.CustomizationFormText = "layoutControlItem32";
             this.layoutControlItem32.Location = new System.Drawing.Point(0, 68);
             this.layoutControlItem32.Name = "layoutControlItem32";
-            this.layoutControlItem32.Size = new System.Drawing.Size(133, 29);
+            this.layoutControlItem32.Size = new System.Drawing.Size(117, 29);
             this.layoutControlItem32.Text = "layoutControlItem32";
             this.layoutControlItem32.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem32.TextToControlDistance = 0;
@@ -764,7 +742,7 @@ namespace FengXuTLTool
             this.layoutControlItem33.CustomizationFormText = "layoutControlItem33";
             this.layoutControlItem33.Location = new System.Drawing.Point(0, 97);
             this.layoutControlItem33.Name = "layoutControlItem33";
-            this.layoutControlItem33.Size = new System.Drawing.Size(133, 29);
+            this.layoutControlItem33.Size = new System.Drawing.Size(117, 29);
             this.layoutControlItem33.Text = "layoutControlItem33";
             this.layoutControlItem33.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem33.TextToControlDistance = 0;
@@ -776,7 +754,7 @@ namespace FengXuTLTool
             this.layoutControlItem34.CustomizationFormText = "layoutControlItem34";
             this.layoutControlItem34.Location = new System.Drawing.Point(0, 126);
             this.layoutControlItem34.Name = "layoutControlItem34";
-            this.layoutControlItem34.Size = new System.Drawing.Size(133, 29);
+            this.layoutControlItem34.Size = new System.Drawing.Size(117, 29);
             this.layoutControlItem34.Text = "layoutControlItem34";
             this.layoutControlItem34.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem34.TextToControlDistance = 0;
@@ -788,7 +766,7 @@ namespace FengXuTLTool
             this.layoutControlItem35.CustomizationFormText = "layoutControlItem35";
             this.layoutControlItem35.Location = new System.Drawing.Point(0, 155);
             this.layoutControlItem35.Name = "layoutControlItem35";
-            this.layoutControlItem35.Size = new System.Drawing.Size(133, 29);
+            this.layoutControlItem35.Size = new System.Drawing.Size(117, 29);
             this.layoutControlItem35.Text = "layoutControlItem35";
             this.layoutControlItem35.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem35.TextToControlDistance = 0;
@@ -800,7 +778,7 @@ namespace FengXuTLTool
             this.layoutControlItem36.CustomizationFormText = "layoutControlItem36";
             this.layoutControlItem36.Location = new System.Drawing.Point(0, 184);
             this.layoutControlItem36.Name = "layoutControlItem36";
-            this.layoutControlItem36.Size = new System.Drawing.Size(133, 29);
+            this.layoutControlItem36.Size = new System.Drawing.Size(117, 29);
             this.layoutControlItem36.Text = "layoutControlItem36";
             this.layoutControlItem36.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem36.TextToControlDistance = 0;
@@ -812,7 +790,7 @@ namespace FengXuTLTool
             this.layoutControlItem37.CustomizationFormText = "layoutControlItem37";
             this.layoutControlItem37.Location = new System.Drawing.Point(0, 213);
             this.layoutControlItem37.Name = "layoutControlItem37";
-            this.layoutControlItem37.Size = new System.Drawing.Size(133, 29);
+            this.layoutControlItem37.Size = new System.Drawing.Size(117, 29);
             this.layoutControlItem37.Text = "layoutControlItem37";
             this.layoutControlItem37.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem37.TextToControlDistance = 0;
@@ -824,7 +802,7 @@ namespace FengXuTLTool
             this.layoutControlItem38.CustomizationFormText = "layoutControlItem38";
             this.layoutControlItem38.Location = new System.Drawing.Point(0, 242);
             this.layoutControlItem38.Name = "layoutControlItem38";
-            this.layoutControlItem38.Size = new System.Drawing.Size(133, 29);
+            this.layoutControlItem38.Size = new System.Drawing.Size(117, 29);
             this.layoutControlItem38.Text = "layoutControlItem38";
             this.layoutControlItem38.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem38.TextToControlDistance = 0;
@@ -836,7 +814,7 @@ namespace FengXuTLTool
             this.layoutControlItem39.CustomizationFormText = "layoutControlItem39";
             this.layoutControlItem39.Location = new System.Drawing.Point(0, 271);
             this.layoutControlItem39.Name = "layoutControlItem39";
-            this.layoutControlItem39.Size = new System.Drawing.Size(133, 33);
+            this.layoutControlItem39.Size = new System.Drawing.Size(117, 29);
             this.layoutControlItem39.Text = "layoutControlItem39";
             this.layoutControlItem39.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem39.TextToControlDistance = 0;
@@ -847,11 +825,8 @@ namespace FengXuTLTool
             this.layoutControlItem26.Control = this.MenuIndex_1;
             this.layoutControlItem26.CustomizationFormText = "layoutControlItem26";
             this.layoutControlItem26.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem26.MaxSize = new System.Drawing.Size(180, 29);
-            this.layoutControlItem26.MinSize = new System.Drawing.Size(180, 29);
             this.layoutControlItem26.Name = "layoutControlItem26";
-            this.layoutControlItem26.Size = new System.Drawing.Size(180, 29);
-            this.layoutControlItem26.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem26.Size = new System.Drawing.Size(159, 29);
             this.layoutControlItem26.Text = "layoutControlItem26";
             this.layoutControlItem26.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem26.TextToControlDistance = 0;
@@ -861,12 +836,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem27.Control = this.MenuIndex_2;
             this.layoutControlItem27.CustomizationFormText = "layoutControlItem27";
-            this.layoutControlItem27.Location = new System.Drawing.Point(180, 0);
-            this.layoutControlItem27.MaxSize = new System.Drawing.Size(180, 29);
-            this.layoutControlItem27.MinSize = new System.Drawing.Size(180, 29);
+            this.layoutControlItem27.Location = new System.Drawing.Point(159, 0);
             this.layoutControlItem27.Name = "layoutControlItem27";
-            this.layoutControlItem27.Size = new System.Drawing.Size(180, 29);
-            this.layoutControlItem27.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem27.Size = new System.Drawing.Size(137, 29);
             this.layoutControlItem27.Text = "layoutControlItem27";
             this.layoutControlItem27.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem27.TextToControlDistance = 0;
@@ -876,12 +848,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem28.Control = this.MenuIndex_3;
             this.layoutControlItem28.CustomizationFormText = "layoutControlItem28";
-            this.layoutControlItem28.Location = new System.Drawing.Point(360, 0);
-            this.layoutControlItem28.MaxSize = new System.Drawing.Size(180, 29);
-            this.layoutControlItem28.MinSize = new System.Drawing.Size(180, 29);
+            this.layoutControlItem28.Location = new System.Drawing.Point(296, 0);
             this.layoutControlItem28.Name = "layoutControlItem28";
-            this.layoutControlItem28.Size = new System.Drawing.Size(180, 29);
-            this.layoutControlItem28.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem28.Size = new System.Drawing.Size(165, 29);
             this.layoutControlItem28.Text = "layoutControlItem28";
             this.layoutControlItem28.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem28.TextToControlDistance = 0;
@@ -891,12 +860,9 @@ namespace FengXuTLTool
             // 
             this.Layout4.Control = this.MenuIndex_4;
             this.Layout4.CustomizationFormText = "MenuIndex_4";
-            this.Layout4.Location = new System.Drawing.Point(540, 0);
-            this.Layout4.MaxSize = new System.Drawing.Size(180, 29);
-            this.Layout4.MinSize = new System.Drawing.Size(180, 29);
+            this.Layout4.Location = new System.Drawing.Point(461, 0);
             this.Layout4.Name = "Layout4";
-            this.Layout4.Size = new System.Drawing.Size(181, 29);
-            this.Layout4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.Layout4.Size = new System.Drawing.Size(174, 29);
             this.Layout4.Text = "Layout4";
             this.Layout4.TextSize = new System.Drawing.Size(0, 0);
             this.Layout4.TextToControlDistance = 0;
@@ -906,12 +872,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem29.Control = this.MenuIndex_6;
             this.layoutControlItem29.CustomizationFormText = "layoutControlItem29";
-            this.layoutControlItem29.Location = new System.Drawing.Point(180, 29);
-            this.layoutControlItem29.MaxSize = new System.Drawing.Size(180, 29);
-            this.layoutControlItem29.MinSize = new System.Drawing.Size(180, 29);
+            this.layoutControlItem29.Location = new System.Drawing.Point(159, 29);
             this.layoutControlItem29.Name = "layoutControlItem29";
-            this.layoutControlItem29.Size = new System.Drawing.Size(180, 29);
-            this.layoutControlItem29.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem29.Size = new System.Drawing.Size(138, 29);
             this.layoutControlItem29.Text = "layoutControlItem29";
             this.layoutControlItem29.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem29.TextToControlDistance = 0;
@@ -921,12 +884,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem43.Control = this.MenuIndex_8;
             this.layoutControlItem43.CustomizationFormText = "layoutControlItem43";
-            this.layoutControlItem43.Location = new System.Drawing.Point(540, 29);
-            this.layoutControlItem43.MaxSize = new System.Drawing.Size(180, 29);
-            this.layoutControlItem43.MinSize = new System.Drawing.Size(180, 29);
+            this.layoutControlItem43.Location = new System.Drawing.Point(461, 29);
             this.layoutControlItem43.Name = "layoutControlItem43";
-            this.layoutControlItem43.Size = new System.Drawing.Size(181, 29);
-            this.layoutControlItem43.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem43.Size = new System.Drawing.Size(174, 29);
             this.layoutControlItem43.Text = "layoutControlItem43";
             this.layoutControlItem43.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem43.TextToControlDistance = 0;
@@ -936,12 +896,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem44.Control = this.MenuIndex_7;
             this.layoutControlItem44.CustomizationFormText = "layoutControlItem44";
-            this.layoutControlItem44.Location = new System.Drawing.Point(360, 29);
-            this.layoutControlItem44.MaxSize = new System.Drawing.Size(180, 29);
-            this.layoutControlItem44.MinSize = new System.Drawing.Size(180, 29);
+            this.layoutControlItem44.Location = new System.Drawing.Point(297, 29);
             this.layoutControlItem44.Name = "layoutControlItem44";
-            this.layoutControlItem44.Size = new System.Drawing.Size(180, 29);
-            this.layoutControlItem44.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem44.Size = new System.Drawing.Size(164, 29);
             this.layoutControlItem44.Text = "layoutControlItem44";
             this.layoutControlItem44.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem44.TextToControlDistance = 0;
@@ -955,7 +912,7 @@ namespace FengXuTLTool
             this.emptySpaceItem3.MaxSize = new System.Drawing.Size(104, 10);
             this.emptySpaceItem3.MinSize = new System.Drawing.Size(104, 10);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(721, 10);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(635, 10);
             this.emptySpaceItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem3.Text = "emptySpaceItem3";
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
@@ -965,21 +922,39 @@ namespace FengXuTLTool
             this.layoutControlItem40.Control = this.MenuIndex_5;
             this.layoutControlItem40.CustomizationFormText = "layoutControlItem40";
             this.layoutControlItem40.Location = new System.Drawing.Point(0, 29);
-            this.layoutControlItem40.MaxSize = new System.Drawing.Size(180, 29);
-            this.layoutControlItem40.MinSize = new System.Drawing.Size(180, 29);
             this.layoutControlItem40.Name = "layoutControlItem40";
-            this.layoutControlItem40.Size = new System.Drawing.Size(180, 29);
-            this.layoutControlItem40.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem40.Size = new System.Drawing.Size(159, 29);
             this.layoutControlItem40.Text = "layoutControlItem40";
             this.layoutControlItem40.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem40.TextToControlDistance = 0;
             this.layoutControlItem40.TextVisible = false;
             // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.CustomizationFormText = "layoutControlItem6";
+            this.layoutControlItem6.Location = new System.Drawing.Point(117, 68);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.Size = new System.Drawing.Size(518, 232);
+            this.layoutControlItem6.Text = "layoutControlItem6";
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem6.TextToControlDistance = 0;
+            this.layoutControlItem6.TextVisible = false;
+            // 
+            // emptySpaceItem8
+            // 
+            this.emptySpaceItem8.AllowHotTrack = false;
+            this.emptySpaceItem8.CustomizationFormText = "emptySpaceItem8";
+            this.emptySpaceItem8.Location = new System.Drawing.Point(413, 0);
+            this.emptySpaceItem8.Name = "emptySpaceItem8";
+            this.emptySpaceItem8.Size = new System.Drawing.Size(246, 29);
+            this.emptySpaceItem8.Text = "emptySpaceItem8";
+            this.emptySpaceItem8.TextSize = new System.Drawing.Size(0, 0);
+            // 
             // btnSaveFile
             // 
-            this.btnSaveFile.Location = new System.Drawing.Point(172, 12);
+            this.btnSaveFile.Location = new System.Drawing.Point(112, 12);
             this.btnSaveFile.Name = "btnSaveFile";
-            this.btnSaveFile.Size = new System.Drawing.Size(66, 25);
+            this.btnSaveFile.Size = new System.Drawing.Size(63, 25);
             this.btnSaveFile.StyleController = this.layoutControl1;
             this.btnSaveFile.TabIndex = 20;
             this.btnSaveFile.Text = "保存";
@@ -989,7 +964,7 @@ namespace FengXuTLTool
             // 
             this.btnLoad.Location = new System.Drawing.Point(12, 12);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(156, 25);
+            this.btnLoad.Size = new System.Drawing.Size(96, 25);
             this.btnLoad.StyleController = this.layoutControl1;
             this.btnLoad.TabIndex = 16;
             this.btnLoad.Text = "载入数据";
@@ -997,52 +972,20 @@ namespace FengXuTLTool
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(1072, 840);
+            this.btnSave.Location = new System.Drawing.Point(982, 840);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(121, 25);
+            this.btnSave.Size = new System.Drawing.Size(110, 25);
             this.btnSave.StyleController = this.layoutControl1;
             this.btnSave.TabIndex = 14;
             this.btnSave.Text = "保存";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // edtPrice
-            // 
-            this.edtPrice.Location = new System.Drawing.Point(605, 812);
-            this.edtPrice.Name = "edtPrice";
-            this.edtPrice.Size = new System.Drawing.Size(588, 24);
-            this.edtPrice.StyleController = this.layoutControl1;
-            this.edtPrice.TabIndex = 13;
-            // 
-            // edtName
-            // 
-            this.edtName.Location = new System.Drawing.Point(607, 784);
-            this.edtName.Name = "edtName";
-            this.edtName.Size = new System.Drawing.Size(586, 24);
-            this.edtName.StyleController = this.layoutControl1;
-            this.edtName.TabIndex = 12;
-            // 
-            // edtNum
-            // 
-            this.edtNum.Location = new System.Drawing.Point(75, 812);
-            this.edtNum.Name = "edtNum";
-            this.edtNum.Size = new System.Drawing.Size(463, 24);
-            this.edtNum.StyleController = this.layoutControl1;
-            this.edtNum.TabIndex = 11;
-            // 
-            // edtWpIndex
-            // 
-            this.edtWpIndex.Location = new System.Drawing.Point(75, 784);
-            this.edtWpIndex.Name = "edtWpIndex";
-            this.edtWpIndex.Size = new System.Drawing.Size(465, 24);
-            this.edtWpIndex.StyleController = this.layoutControl1;
-            this.edtWpIndex.TabIndex = 10;
-            // 
             // grdcList
             // 
-            this.grdcList.Location = new System.Drawing.Point(12, 422);
+            this.grdcList.Location = new System.Drawing.Point(12, 439);
             this.grdcList.MainView = this.grdvList;
             this.grdcList.Name = "grdcList";
-            this.grdcList.Size = new System.Drawing.Size(1181, 358);
+            this.grdcList.Size = new System.Drawing.Size(1080, 397);
             this.grdcList.TabIndex = 4;
             this.grdcList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdvList});
@@ -1051,7 +994,6 @@ namespace FengXuTLTool
             // 
             this.grdvList.GridControl = this.grdcList;
             this.grdvList.Name = "grdvList";
-            this.grdvList.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.grdvList_FocusedRowChanged);
             // 
             // layoutControlGroup1
             // 
@@ -1060,19 +1002,18 @@ namespace FengXuTLTool
             this.layoutControlGroup1.GroupBordersVisible = false;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
-            this.layoutControlItem7,
-            this.layoutControlItem9,
-            this.layoutControlItem8,
-            this.layoutControlItem10,
             this.layoutControlItem13,
             this.emptySpaceItem1,
             this.layoutControlItem17,
             this.layoutControlItem18,
             this.layoutControlItem11,
-            this.emptySpaceItem2});
+            this.emptySpaceItem2,
+            this.layoutControlItem7,
+            this.layoutControlItem8,
+            this.emptySpaceItem9});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1205, 877);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1104, 877);
             this.layoutControlGroup1.Text = "Root";
             this.layoutControlGroup1.TextVisible = false;
             // 
@@ -1080,63 +1021,23 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem1.Control = this.grdcList;
             this.layoutControlItem1.CustomizationFormText = "layoutControlItem1";
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 410);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 427);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(1185, 362);
+            this.layoutControlItem1.Size = new System.Drawing.Size(1084, 401);
             this.layoutControlItem1.Text = "layoutControlItem1";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextToControlDistance = 0;
             this.layoutControlItem1.TextVisible = false;
-            // 
-            // layoutControlItem7
-            // 
-            this.layoutControlItem7.Control = this.edtWpIndex;
-            this.layoutControlItem7.CustomizationFormText = "物品编号";
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 772);
-            this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(532, 28);
-            this.layoutControlItem7.Text = "物品编号";
-            this.layoutControlItem7.TextSize = new System.Drawing.Size(60, 18);
-            // 
-            // layoutControlItem9
-            // 
-            this.layoutControlItem9.Control = this.edtName;
-            this.layoutControlItem9.CustomizationFormText = "物品名称";
-            this.layoutControlItem9.Location = new System.Drawing.Point(532, 772);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(653, 28);
-            this.layoutControlItem9.Text = "物品名称";
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(60, 18);
-            // 
-            // layoutControlItem8
-            // 
-            this.layoutControlItem8.Control = this.edtNum;
-            this.layoutControlItem8.CustomizationFormText = "物品数量";
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 800);
-            this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(530, 28);
-            this.layoutControlItem8.Text = "物品数量";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(60, 18);
-            // 
-            // layoutControlItem10
-            // 
-            this.layoutControlItem10.Control = this.edtPrice;
-            this.layoutControlItem10.CustomizationFormText = "layoutControlItem10";
-            this.layoutControlItem10.Location = new System.Drawing.Point(530, 800);
-            this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(655, 28);
-            this.layoutControlItem10.Text = "物品价格";
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(60, 18);
             // 
             // layoutControlItem13
             // 
             this.layoutControlItem13.Control = this.btnLoad;
             this.layoutControlItem13.CustomizationFormText = "layoutControlItem13";
             this.layoutControlItem13.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem13.MaxSize = new System.Drawing.Size(160, 29);
+            this.layoutControlItem13.MaxSize = new System.Drawing.Size(100, 29);
             this.layoutControlItem13.MinSize = new System.Drawing.Size(100, 29);
             this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(160, 29);
+            this.layoutControlItem13.Size = new System.Drawing.Size(100, 29);
             this.layoutControlItem13.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem13.Text = "layoutControlItem13";
             this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
@@ -1147,9 +1048,9 @@ namespace FengXuTLTool
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
             this.emptySpaceItem1.CustomizationFormText = "emptySpaceItem1";
-            this.emptySpaceItem1.Location = new System.Drawing.Point(230, 0);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(167, 0);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(955, 29);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(917, 29);
             this.emptySpaceItem1.Text = "emptySpaceItem1";
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -1157,9 +1058,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem17.Control = this.btnSaveFile;
             this.layoutControlItem17.CustomizationFormText = "layoutControlItem17";
-            this.layoutControlItem17.Location = new System.Drawing.Point(160, 0);
+            this.layoutControlItem17.Location = new System.Drawing.Point(100, 0);
             this.layoutControlItem17.Name = "layoutControlItem17";
-            this.layoutControlItem17.Size = new System.Drawing.Size(70, 29);
+            this.layoutControlItem17.Size = new System.Drawing.Size(67, 29);
             this.layoutControlItem17.Text = "layoutControlItem17";
             this.layoutControlItem17.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem17.TextToControlDistance = 0;
@@ -1171,7 +1072,7 @@ namespace FengXuTLTool
             this.layoutControlItem18.CustomizationFormText = "layoutControlItem18";
             this.layoutControlItem18.Location = new System.Drawing.Point(0, 29);
             this.layoutControlItem18.Name = "layoutControlItem18";
-            this.layoutControlItem18.Size = new System.Drawing.Size(1185, 381);
+            this.layoutControlItem18.Size = new System.Drawing.Size(1084, 369);
             this.layoutControlItem18.Text = "layoutControlItem18";
             this.layoutControlItem18.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem18.TextToControlDistance = 0;
@@ -1181,9 +1082,9 @@ namespace FengXuTLTool
             // 
             this.layoutControlItem11.Control = this.btnSave;
             this.layoutControlItem11.CustomizationFormText = "layoutControlItem11";
-            this.layoutControlItem11.Location = new System.Drawing.Point(1060, 828);
+            this.layoutControlItem11.Location = new System.Drawing.Point(970, 828);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(125, 29);
+            this.layoutControlItem11.Size = new System.Drawing.Size(114, 29);
             this.layoutControlItem11.Text = "layoutControlItem11";
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextToControlDistance = 0;
@@ -1195,7 +1096,7 @@ namespace FengXuTLTool
             this.emptySpaceItem2.CustomizationFormText = "emptySpaceItem2";
             this.emptySpaceItem2.Location = new System.Drawing.Point(0, 828);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(1060, 29);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(970, 29);
             this.emptySpaceItem2.Text = "emptySpaceItem2";
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
@@ -1232,34 +1133,85 @@ namespace FengXuTLTool
             this.layoutControlItem16.TextToControlDistance = 0;
             this.layoutControlItem16.TextVisible = false;
             // 
-            // layoutControlItem6
+            // emptySpaceItem6
             // 
-            this.layoutControlItem6.Control = this.textEdit1;
-            this.layoutControlItem6.CustomizationFormText = "layoutControlItem6";
-            this.layoutControlItem6.Location = new System.Drawing.Point(133, 68);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(588, 236);
-            this.layoutControlItem6.Text = "layoutControlItem6";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem6.TextToControlDistance = 0;
-            this.layoutControlItem6.TextVisible = false;
+            this.emptySpaceItem6.AllowHotTrack = false;
+            this.emptySpaceItem6.CustomizationFormText = "emptySpaceItem6";
+            this.emptySpaceItem6.Location = new System.Drawing.Point(0, 353);
+            this.emptySpaceItem6.Name = "emptySpaceItem6";
+            this.emptySpaceItem6.Size = new System.Drawing.Size(724, 10);
+            this.emptySpaceItem6.Text = "emptySpaceItem6";
+            this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // textEdit1
+            // emptySpaceItem7
             // 
-            this.textEdit1.Location = new System.Drawing.Point(157, 121);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(584, 232);
-            this.textEdit1.StyleController = this.layoutControl2;
-            this.textEdit1.TabIndex = 28;
+            this.emptySpaceItem7.AllowHotTrack = false;
+            this.emptySpaceItem7.CustomizationFormText = "emptySpaceItem7";
+            this.emptySpaceItem7.Location = new System.Drawing.Point(0, 353);
+            this.emptySpaceItem7.Name = "emptySpaceItem7";
+            this.emptySpaceItem7.Size = new System.Drawing.Size(724, 10);
+            this.emptySpaceItem7.Text = "emptySpaceItem7";
+            this.emptySpaceItem7.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // edtEq
+            // 
+            this.edtEq.Location = new System.Drawing.Point(75, 410);
+            this.edtEq.Name = "edtEq";
+            this.edtEq.Size = new System.Drawing.Size(166, 24);
+            this.edtEq.StyleController = this.layoutControl1;
+            this.edtEq.TabIndex = 22;
+            // 
+            // layoutControlItem7
+            // 
+            this.layoutControlItem7.Control = this.edtEq;
+            this.layoutControlItem7.CustomizationFormText = "物品名称";
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 398);
+            this.layoutControlItem7.Name = "layoutControlItem7";
+            this.layoutControlItem7.Size = new System.Drawing.Size(233, 29);
+            this.layoutControlItem7.Text = "物品名称";
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(60, 18);
+            // 
+            // btnQueryLocation
+            // 
+            this.btnQueryLocation.Location = new System.Drawing.Point(990, 410);
+            this.btnQueryLocation.Name = "btnQueryLocation";
+            this.btnQueryLocation.Size = new System.Drawing.Size(102, 25);
+            this.btnQueryLocation.StyleController = this.layoutControl1;
+            this.btnQueryLocation.TabIndex = 23;
+            this.btnQueryLocation.Text = "定位";
+            this.btnQueryLocation.Click += new System.EventHandler(this.btnQueryLocation_Click);
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.Control = this.btnQueryLocation;
+            this.layoutControlItem8.CustomizationFormText = "layoutControlItem8";
+            this.layoutControlItem8.Location = new System.Drawing.Point(978, 398);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(106, 29);
+            this.layoutControlItem8.Text = "layoutControlItem8";
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem8.TextToControlDistance = 0;
+            this.layoutControlItem8.TextVisible = false;
+            // 
+            // emptySpaceItem9
+            // 
+            this.emptySpaceItem9.AllowHotTrack = false;
+            this.emptySpaceItem9.CustomizationFormText = "emptySpaceItem9";
+            this.emptySpaceItem9.Location = new System.Drawing.Point(233, 398);
+            this.emptySpaceItem9.Name = "emptySpaceItem9";
+            this.emptySpaceItem9.Size = new System.Drawing.Size(745, 29);
+            this.emptySpaceItem9.Text = "emptySpaceItem9";
+            this.emptySpaceItem9.TextSize = new System.Drawing.Size(0, 0);
             // 
             // FrmXYJShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1205, 877);
+            this.ClientSize = new System.Drawing.Size(1104, 877);
             this.Controls.Add(this.layoutControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmXYJShop";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "逍遥记商店修改";
             this.Load += new System.EventHandler(this.FrmXYJShop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
@@ -1307,18 +1259,12 @@ namespace FengXuTLTool
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtPrice.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtNum.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtWpIndex.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdcList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdvList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
@@ -1328,8 +1274,12 @@ namespace FengXuTLTool
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edtEq.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1339,17 +1289,9 @@ namespace FengXuTLTool
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraEditors.SimpleButton btnSave;
-        private DevExpress.XtraEditors.TextEdit edtPrice;
-        private DevExpress.XtraEditors.TextEdit edtName;
-        private DevExpress.XtraEditors.TextEdit edtNum;
-        private DevExpress.XtraEditors.TextEdit edtWpIndex;
         private DevExpress.XtraGrid.GridControl grdcList;
         private DevExpress.XtraGrid.Views.Grid.GridView grdvList;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
         private DevExpress.XtraEditors.SimpleButton btnLoad;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
@@ -1399,7 +1341,6 @@ namespace FengXuTLTool
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem26;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem27;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem28;
-        private DevExpress.XtraLayout.LayoutControlItem Layout4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem40;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem29;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem43;
@@ -1423,7 +1364,15 @@ namespace FengXuTLTool
         private DevExpress.XtraEditors.SimpleButton btnEqAdd;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem5;
-        private DevExpress.XtraEditors.MemoEdit textEdit1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem8;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem6;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem7;
+        protected DevExpress.XtraLayout.LayoutControlItem Layout4;
+        private DevExpress.XtraEditors.SimpleButton btnQueryLocation;
+        private DevExpress.XtraEditors.TextEdit edtEq;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem9;
     }
 }

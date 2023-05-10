@@ -18,7 +18,7 @@ namespace FengXuTLTool
         static void Main()
         {
             //注册委托
-            AppDomain.CurrentDomain.AssemblyResolve += CurrentDomainAssemblyResolve;
+            //AppDomain.CurrentDomain.AssemblyResolve += CurrentDomainAssemblyResolve;
 
             BindExceptionHandler();
             Application.EnableVisualStyles();
