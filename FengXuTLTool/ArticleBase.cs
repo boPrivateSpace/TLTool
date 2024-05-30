@@ -65,9 +65,10 @@ namespace FengXuTLTool
                 {
                     Index = dt.Rows[i]["INDEX"].ToString(),
                     Name = dt.Rows[i]["NAME$1$"].ToString(),
+                    Num = dt.Rows[i]["叠放数量"].ToString(),
                 });
-            }
 
+            }
 
             DataTable dt1 = Excel.TXTToDataTable("EquipBase.txt", string.Empty);
             //循环遍历所有的行，将值赋值给List
@@ -97,6 +98,8 @@ namespace FengXuTLTool
                     {
                         Index = dt1.Rows[i]["INDEX"].ToString(),
                         Name = dt1.Rows[i]["NAME(名称)$1$"].ToString(),
+                        Num = "1",
+
                     });
                 }
                 catch
@@ -110,40 +113,35 @@ namespace FengXuTLTool
 
             }
 
-
-
-            Task task2 = Task.Run(() =>
+            DataTable dt2 = Excel.TXTToDataTable("GemInfo.txt", string.Empty);
+            //循环遍历所有的行，将值赋值给List
+            for (int i = 0; i < dt2.Rows.Count; i++)
             {
-                DataTable dt2 = Excel.TXTToDataTable("GemInfo.txt", string.Empty);
-                //循环遍历所有的行，将值赋值给List
-                for (int i = 0; i < dt2.Rows.Count; i++)
+                try
                 {
-                    try
+                    if (dt2.Rows[i].IsNull("名称$1$"))
                     {
-                        if (dt2.Rows[i].IsNull("名称$1$"))
-                        {
-                            continue;
-                        }
-
-                        _articleLists.Add(new ArticleList
-                        {
-                            Index = dt2.Rows[i]["INDEX"].ToString(),
-                            Name = dt2.Rows[i]["名称$1$"].ToString(),
-                        });
+                        continue;
                     }
-                    catch
+
+                    _articleLists.Add(new ArticleList
                     {
+                        Index = dt2.Rows[i]["INDEX"].ToString(),
+                        Name = dt2.Rows[i]["名称$1$"].ToString(),
+                        Num = "250",
 
-                    }
-                    finally
-                    {
+                    });
+                }
+                catch
+                {
 
-                    }
+                }
+                finally
+                {
 
                 }
 
-            });
-
+            }
         }
 
         #endregion

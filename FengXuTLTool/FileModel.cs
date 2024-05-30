@@ -33,9 +33,12 @@ namespace FengXuTLTool
 
     public class ArticleList
     {
+        public string Name { get; set; }
+
         public string Index { get; set; }
 
-        public string Name { get; set; }
+        public string Num { get; set; }
+
     }
 
 
@@ -49,6 +52,11 @@ namespace FengXuTLTool
 
     }
 
+    public class CDKCodeT
+    {
+        public string Code { get; set; }
+
+    }
 
 
     public class XYJShop
@@ -66,6 +74,23 @@ namespace FengXuTLTool
         public string 物品折扣比 { get; set; }
         public string 商品特殊标记 { get; set; }
         public string 颜色显示 { get; set; }
+
+    }
+
+
+    public class MonsterDrop
+    {
+        public string 怪物编号 { get; set; }
+        public string 物品Id { get; set; }
+    }
+
+    public class DropItem
+    {
+        public string Index { get; set; }
+
+        public string ItemId { get; set; }
+
+        public string ItemName { get; set; }
 
     }
 }

@@ -132,7 +132,11 @@ namespace FengXuTLTool
                     DataRow dr = dt.NewRow();
                     for (int j = 0; j < aryLine.Count(); j++)
                     {
-                        dr[j] = aryLine[j].ToUpper();
+                        if ( dt.Columns.Count >=j+1)
+                        {
+                            dr[j] = aryLine[j];
+                        }
+                  
                     }
                     dt.Rows.Add(dr);
                 }
@@ -149,23 +153,27 @@ namespace FengXuTLTool
         }
 
 
-        public static bool ExportToExcelOrTxt(DataTable dgvData, string fileName, List<string> columns,bool isNeedTitle=true)
+        public static bool ExportToExcelOrTxt(DataTable dgvData, string fileName, List<string> columns,bool isNeedTitle=true,bool isAppend = false)
         {
-            StreamWriter sw = new StreamWriter(fileName, false, Encoding.GetEncoding(-0));
+            StreamWriter sw = new StreamWriter(fileName, isAppend, Encoding.GetEncoding(-0));
             string str = "";
             try
             {
-                //写标题
-                foreach (var item in columns)
-                {
-                    if (!string.IsNullOrEmpty(str))
+                if (columns.Count > 0)
+                {               
+                    //写标题
+                    foreach (var item in columns)
                     {
-                        str += "\t";
+                        if (!string.IsNullOrEmpty(str))
+                        {
+                            str += "\t";
+                        }
+                        str += item.ToUpper(); ;
                     }
-                    str += item.ToUpper(); ;
+
+                    sw.WriteLine(str);
                 }
 
-                sw.WriteLine(str);
                 if (isNeedTitle)
                 {
                     str = "";
@@ -179,7 +187,6 @@ namespace FengXuTLTool
                     }
                     sw.WriteLine(str);
                 }
-                sw.WriteLine("#风絮商店工具修改 By:QQ464141564");
 
                 //写内容
                 for (int j = 0; j < dgvData.Rows.Count; j++)
@@ -188,11 +195,15 @@ namespace FengXuTLTool
                     DateTime time = default;
                     for (int k = 0; k < dgvData.Columns.Count; k++)
                     {
+                        string cellValue = dgvData.Rows[j][k].ToString();
+                        if (string.IsNullOrEmpty(cellValue))
+                        {
+                            continue;
+                        }
                         if (!string.IsNullOrEmpty(tempStr))
                         {
                             tempStr += "\t";
                         }
-                        string cellValue = dgvData.Rows[j][k].ToString();
                         if (cellValue == null)
                         {
                             continue;

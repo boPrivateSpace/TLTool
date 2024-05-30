@@ -55,7 +55,7 @@ namespace FengXuTLTool
                 GridUtils.CreateGridColumn(this.grdvList, "物品名称", "物品名称");
                 GridUtils.CreateGridColumn(this.grdvList, "物品数量", "物品数量");
                 GridUtils.CreateGridColumn(this.grdvList, "物品价格", "物品价格");
-                InitGridColumnAllowEdit(grdvList, new List<string>() { "物品数量", "物品价格" });
+                InitGridColumnAllowEdit(grdvList, new List<string>() { "物品INDEX", "物品数量", "物品价格" });
                 this.grdvList.CustomColumnDisplayText += new CustomColumnDisplayTextEventHandler(this.grdvList_CustomColumnDisplayText);
             }
             finally
@@ -246,6 +246,8 @@ namespace FengXuTLTool
             this.ShopIndex_7.ForeColor = Color.Black;
             this.ShopIndex_8.ForeColor = Color.Black;
 
+            
+
             button.ForeColor = Color.Red;
 
         }
@@ -260,7 +262,7 @@ namespace FengXuTLTool
         {
             grdcList.DataSource = _xyjShop.Where(x => x.nMenuIndex == _MenueIndex && x.nShopIndex == _ShopIndex && x.商店标识 == _Index).OrderBy(x=>Convert.ToInt32(x.物品INDEX)).ToList();
             grdcList.RefreshDataSource();
-            grdvList.FocusedRowHandle = this.grdvList.RowCount - 1;
+            //grdvList.FocusedRowHandle = this.grdvList.RowCount - 1;
         }
 
 
@@ -312,13 +314,18 @@ namespace FengXuTLTool
                 return;
             }
 
-
-            foreach (var item in xYJShops)
+            var i = 0;
+            foreach (var item in xYJShops.OrderBy(x=>x.物品INDEX))
             {
-                var it = _xyjShop.Where(x => x.index == item.index).FirstOrDefault();
+                i++; 
+                var it = _xyjShop.Where(x => x.物品INDEX == item.物品INDEX).FirstOrDefault();
                 it.物品ITEMID = item.物品ITEMID;
                 it.物品数量 = item.物品数量;
                 it.物品价格 = item.物品价格;
+                it.商店标识 = _Index;
+                it.nMenuIndex = _MenueIndex;
+                it.nShopIndex = _ShopIndex;
+                it.物品INDEX = i.ToString();
             }
             //xYJShop.商店标识 = edtIndex1.EditValue.ToString();
             //xYJShop.nMenuIndex = edtnMenuIndex.EditValue.ToString();
@@ -477,7 +484,7 @@ namespace FengXuTLTool
             xYJShop.物品INDEX = (Convert.ToInt32(_xyjShop.Where(x => x.商店标识 == _Index && x.nMenuIndex == _MenueIndex && x.nShopIndex == _ShopIndex).Count()) + 1).ToString();
             xYJShop.物品ITEMID = dr.Index;
             xYJShop.物品数量 = "1";
-            xYJShop.物品价格 = "0";
+            xYJShop.物品价格 = "80000";
             xYJShop.物品折扣比 = "100";
             xYJShop.颜色显示 = "0";
 
@@ -503,6 +510,54 @@ namespace FengXuTLTool
             _Index = location.商店标识;
             _MenueIndex = location.nMenuIndex;
             _ShopIndex = location.nShopIndex;
+
+            RefreshDataSource();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+           List<XYJShop> list= _xyjShop.Where(x => x.nMenuIndex == _MenueIndex && x.nShopIndex == _ShopIndex && x.商店标识 == _Index).ToList();
+            foreach (var item in list)
+            {
+                _xyjShop.Remove(item);
+            }
+            RefreshDataSource();
+
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(this.edtShop.Text))
+            {
+                MessageBox.Show("请填写移动到的商店位置");
+                return;
+            }
+
+            XYJShop dr = (XYJShop)this.grdvList.GetFocusedRow();
+            if (dr == null)
+            {
+                return;
+            }
+
+            var shop = _xyjShop.Where(x => x.nMenuIndex == _MenueIndex && x.nShopIndex == this.edtShop.Text && x.商店标识 == _Index).OrderByDescending(x => x.index).FirstOrDefault();
+            if (shop != null)
+            {
+                dr.nShopIndex = this.edtShop.Text;
+                dr.物品INDEX = (Convert.ToInt32(shop.物品INDEX) + 1).ToString();
+            }
+          
+            RefreshDataSource();
+        }
+
+        private void benPaixu_Click(object sender, EventArgs e)
+        {
+
+            int i = 1;
+            foreach (var item in _xyjShop.Where(x => x.商店标识 == _Index && x.nMenuIndex == _MenueIndex && x.nShopIndex == _ShopIndex))
+            {
+                item.物品INDEX = i.ToString();
+                i++;
+            }
 
             RefreshDataSource();
         }
