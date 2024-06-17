@@ -87,16 +87,18 @@ namespace FengXuTLTool
             if (res1.Status == "200")
             {
                 var list = res1.Data?.results.Where(x => x.MachineCode == code).Select(x=>x.Permission).FirstOrDefault();
-                foreach (var item in list.Split(','))
+                if (list != null)
                 {
-                    switch (item)
+                    foreach (var item in list.Split(','))
                     {
-                        case "DropItem":
-                            this.lyDrop.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
-                            break;
+                        switch (item)
+                        {
+                            case "DropItem":
+                                this.lyDrop.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
+                                break;
+                        }
                     }
                 }
-
             }
         }
 
